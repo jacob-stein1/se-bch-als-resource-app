@@ -5,7 +5,7 @@ import { IQuestion, IChoice , IBodyContent, ISolution} from '@/types/api_types';
 import search_questions_choices_from_json from '../utils/TempGetNextQuestion';
 import { bodyContentUseStyles } from '@/components/MainBody/HelperFunctions/BodyContentStyle';
 import ToggleButton from '@/components/MainBody/TogglebButton';
-import SolutionPages from './SolutionContent';
+import SolutionPages from '../utils/SolutionContent';
 
 let prevSelectedContent : IBodyContent[] = []
 

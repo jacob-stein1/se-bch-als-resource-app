@@ -4,7 +4,7 @@ import { Stack, Text} from '@mantine/core';
 import ResourcesHandouts from '@/components/MainBody/SolutionPageContent/ResourcesHandouts';
 import { ISolution } from '@/types/api_types';
 import { HandoutOrTestimonialLink, PageContentType, ResourceLink } from '@/types/dataTypes';
-import getSolutionContent from '../utils/GetSolutionPageForChoice';
+import getSolutionContent from './GetSolutionPageForChoice';
 import PageContent from '@/components/MainBody/SolutionPageContent/PageContent';
 
 
