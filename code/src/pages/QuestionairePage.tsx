@@ -51,7 +51,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
     if (choice.title === 'Communication') {
       // setPageTitle('Communication');
       pageTitle.current = 'Communication'
-      image.current = '/titleImgCommunication.PNG'
+      image.current = '/titleImgCommunication.png'
       // setImage('/titleImgCommunication.PNG')
     }
   }, [clickedChoice, currChoices, currQuestion]);
