@@ -45,7 +45,7 @@ const QuestionaireBodyContent: React.FC = () => {
 
     if(choice.title == "Communication"){
       setPageTitle("Communication")
-      // setImage("/titleImgCommunication.PNG")
+      setImage("/titleImgCommunication.PNG")
     } 
     
 
