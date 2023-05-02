@@ -3,7 +3,7 @@ import { Stack, Text} from '@mantine/core';
 import { bodyContentUseStyles } from '../../components/MainBody/HelperFunctions/BodyContentStyle';
 import { IChoice, IQuestion, ISolution } from "@/types/api_types";
 import { useEffect, useState } from "react";
-import { getNextQuestionOrSolution, getQuestionNChoices } from "../api/getAPI";
+import { getNextQuestionOrSolution, getQuestionNChoices } from "../../utils/getAPI";
 import ToggleButton from "../../components/MainBody/TogglebButton";
 import { useRouter } from 'next/router';
 import Link from "next/link";

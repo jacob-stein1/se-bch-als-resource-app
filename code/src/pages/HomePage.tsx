@@ -3,7 +3,7 @@ import Title from '../components/Title/Titles'
 import { Stack, Text} from '@mantine/core';
 import { IChoice, IQuestion } from '@/types/api_types';
 import { bodyContentUseStyles } from '../components/MainBody/HelperFunctions/BodyContentStyle';
-import { getChoices, getNextQuestionOrSolution } from './api/getAPI';
+import { getChoices, getNextQuestionOrSolution } from '../utils/getAPI';
 import ToggleButton from '../components/MainBody/TogglebButton';
 import Link from "next/link";
 import { useRouter } from 'next/router';

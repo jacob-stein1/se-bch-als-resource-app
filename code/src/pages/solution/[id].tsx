@@ -3,7 +3,7 @@ import { bodyContentUseStyles } from '../../components/MainBody/HelperFunctions/
 import { Stack, Text} from '@mantine/core';
 import ResourcesHandouts from '../../components/MainBody/SolutionPageContent/ResourcesHandouts';
 import { HandoutOrTestimonialLink, PageContentType, ResourceLink } from '@/types/dataTypes';
-import {getSolutionContent} from '../api/GetSolutionPageForChoice';
+import {getSolutionContent} from '../../utils/GetSolutionPageForChoice';
 import PageContent from '../../components/MainBody/SolutionPageContent/PageContent';
 import { useRouter } from 'next/router';
 import Title from '../../components/Title/Titles'
