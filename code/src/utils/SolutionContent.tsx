@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { Suspense, useEffect, useState } from 'react'
 import { bodyContentUseStyles } from '@/components/MainBody/HelperFunctions/BodyContentStyle';
 import { Stack, Text} from '@mantine/core';
 import ResourcesHandouts from '@/components/MainBody/SolutionPageContent/ResourcesHandouts';
@@ -13,6 +13,9 @@ interface SolutionContentProps{
   hasSolution: boolean
 }
 
+// const PageContent = React.lazy(() => import('@/components/MainBody/SolutionPageContent/PageContent'))
+
+
 const SolutionPages: React.FC<SolutionContentProps> = ({solution, hasSolution}) => {
   const { classes } = bodyContentUseStyles();
   let [resourceList, setResourceList] = useState<ResourceLink[]>([])
@@ -25,6 +28,8 @@ const SolutionPages: React.FC<SolutionContentProps> = ({solution, hasSolution}) 
     setHandoutTestimonialList(handouts_testimonials_list)
     setPageContent(page_content)
   }
+
+  
   
   useEffect(() => {
     if (hasSolution && solution.id != ""){
@@ -34,19 +39,38 @@ const SolutionPages: React.FC<SolutionContentProps> = ({solution, hasSolution}) 
 
   return (
     <div>
-          <Stack
-          spacing="xl"
-          className={classes.outer}
-          sx={(theme) => ({
-            backgroundColor:
-              theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
-          })}
-        >
-          <Text className={classes.text}> {solution.title} </Text>
-          {!pageContent.length ? <></> : <div> <PageContent data={pageContent}></PageContent></div>}
-          {!resourceList.length ? <></>:<ResourcesHandouts title= {"Resources"} data={resourceList}></ResourcesHandouts> }
-           {!handoutTestimonialList.length ? <></>:<ResourcesHandouts title={"Handouts/Testimonials"} data={handoutTestimonialList}></ResourcesHandouts> }
-        </Stack>
+      <Stack
+        spacing="xl"
+        className={classes.outer}
+        sx={(theme) => ({
+          backgroundColor:
+            theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
+        })}
+      >
+        <Text className={classes.text}> {solution.title} </Text>
+        {!pageContent.length ? (
+          <></>
+        ) : (
+          <div>
+            <Suspense fallback={<div>Loading page content...</div>}>
+              <PageContent data={pageContent} />
+            </Suspense>
+          </div>
+        )}
+        {!resourceList.length ? (
+          <></>
+        ) : (
+          <ResourcesHandouts title={"Resources"} data={resourceList} />
+        )}
+        {!handoutTestimonialList.length ? (
+          <></>
+        ) : (
+          <ResourcesHandouts
+            title={"Handouts/Testimonials"}
+            data={handoutTestimonialList}
+          />
+        )}
+      </Stack>
     </div>
   )
 }

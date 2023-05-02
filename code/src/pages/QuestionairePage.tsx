@@ -63,7 +63,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
   }, []);
 
   const prevQuestion = () => {
-    if (prevSelectedContent.current.length > 2) {
+    if (prevSelectedContent.current.length > 1) {
       const i = 1;
       if (hasSolution) {
         updateChoicesAndQuestions(clickedChoice);
@@ -72,7 +72,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
       setClickedChoice(prevSelectedContent.current[prevSelectedContent.current.length-i].prevChoice)
       setCurrChoices(prevSelectedContent.current[prevSelectedContent.current.length-i].choiceList)
       prevSelectedContent.current.pop()
-      if (prevSelectedContent.current.length < 3){
+      if (prevSelectedContent.current.length < 2){
         pageTitle.current ="Home"
         image.current = "/titleimghome.PNG"
       }
@@ -83,7 +83,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
 
   return (
     <div>
-    <Title hasPrev={(prevSelectedContent.current.length > 2)} prevQuestion={prevQuestion} titleImg={image.current} title={pageTitle.current} />
+    <Title hasPrev={(prevSelectedContent.current.length > 1)} prevQuestion={prevQuestion} titleImg={image.current} title={pageTitle.current} />
     {!hasSolution ? 
     <Stack
       spacing="xl"
