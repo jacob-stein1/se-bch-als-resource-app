@@ -45,7 +45,7 @@ export const QuestionaireBodyContent: React.FC = () => {
 
     if(choice.title == "Communication"){
       setPageTitle("Communication")
-      setImage("/titleImgCommunication.PNG")
+      // setImage("/titleImgCommunication.PNG")
     } 
     
 
@@ -61,12 +61,6 @@ export const QuestionaireBodyContent: React.FC = () => {
       updateChoicesAndQuestions(clickedChoice)
     }
   }, [])
-
-
-  const hasPrev = () => {
-    console.log("checking"+prevSelectedContent.length)
-    return prevSelectedContent.length > 2;
-  };
 
   const prevQuestion = () => {
       if (prevSelectedContent.length > 2) {
