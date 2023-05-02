@@ -1,5 +1,5 @@
-import HomePage from './HomePage';
-import {QuestionaireBodyContent} from './QuestionairePage'
+// import HomePage from './HomePage';
+import QuestionaireBodyContent from './QuestionairePage'
 
 export default function Home() {
   return (
