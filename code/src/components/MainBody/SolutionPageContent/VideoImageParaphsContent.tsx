@@ -60,7 +60,7 @@ const VideoImageParaphsContent = ({data}: {data: PageContentType[]}) => {
       spacing="xl"
     >
       {data.map((pagetypecontent) => ( 
-        <div>
+        <div key={pagetypecontent.videoURL}>
           {pagetypecontent.videoURL !="" ? <Video url={pagetypecontent.videoURL}/> : <></>}
           {pagetypecontent.paragraph !="" ? <Paragraph paragraph={pagetypecontent.paragraph} /> : <></>}
         </div>
