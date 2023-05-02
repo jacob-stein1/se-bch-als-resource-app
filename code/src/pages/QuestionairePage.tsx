@@ -45,7 +45,7 @@ const QuestionaireBodyContent: React.FC = () => {
 
     if(choice.title == "Communication"){
       setPageTitle("Communication")
-      setImage("/titleImgCommunication.PNG")
+      // setImage("/titleImgCommunication.PNG")
     } 
     
 
@@ -63,7 +63,7 @@ const QuestionaireBodyContent: React.FC = () => {
   }, [])
 
   const prevQuestion = () => {
-      if (prevSelectedContent.length > 2) {
+      if (prevSelectedContent.length > 1) {
           let i = 1
         if (hasSolution){
           console.log(clickedChoice)
@@ -73,10 +73,10 @@ const QuestionaireBodyContent: React.FC = () => {
         setClickedChoice(prevSelectedContent[prevSelectedContent.length-i].prevChoice)
         setCurChoices(prevSelectedContent[prevSelectedContent.length-i].choiceList)
         prevSelectedContent.pop()
-        if (prevSelectedContent.length < 3){
-          setPageTitle("Home")
-          setImage("/titleimghome.PNG")
-        }
+        // if (prevSelectedContent[prevSelectedContent.length-i-1].prevChoice.title == "Home"){
+        //   setPageTitle("Home")
+        //   setImage("/titleimghome.PNG")
+        // }
         console.log("its length"+prevSelectedContent.length)
         console.log("hassol"+hasSolution)
       }
@@ -84,7 +84,7 @@ const QuestionaireBodyContent: React.FC = () => {
 
   return (
     <div>
-    <Title hasPrev={(prevSelectedContent.length > 2)} prevQuestion={prevQuestion} titleImg={image} title={pageTitle} />
+    <Title hasPrev={(prevSelectedContent.length > 1)} prevQuestion={prevQuestion} titleImg={image} title={pageTitle} />
     {!hasSolution ? 
     <Stack
       spacing="xl"
