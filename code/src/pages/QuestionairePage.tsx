@@ -1,5 +1,5 @@
 import { Stack, Text } from '@mantine/core';
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import Title from '@/components/Title/Titles';
 import { IQuestion, IChoice, IBodyContent, ISolution } from '@/types/api_types';
 import searchQuestionsChoicesFromJson from '@/utils/TempGetNextQuestion';
@@ -22,10 +22,10 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
 
   const [hasSolution, setHasSolution] = useState(false);
 
-  const [pageTitle, setPageTitle] = useState('Home');
-  const [image, setImage] = useState('/titleimghome.PNG');
+  const pageTitle = useRef('Home');
+  const image = useRef('/titleimghome.PNG');
 
-  const prevSelectedContent: IBodyContent[] = useMemo(() => [], []);
+  const prevSelectedContent = useRef<IBodyContent[]>([]);
 
   const memoizedSearchQuestionsChoicesFromJson = useMemo(() => {
     return async (choice: IChoice): Promise<[IQuestion, IChoice[], boolean, ISolution]> => {
@@ -42,16 +42,19 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
       setSolution({ id: '', title: '' });
       setClickedChoice(choice);
     }
+    console.log(prevSelectedContent.current.length)
     if (question.title !== '') {
-      prevSelectedContent.push({ question: currQuestion, prevChoice: clickedChoice, choiceList: currChoices });
+      prevSelectedContent.current.push({ question: currQuestion, prevChoice: clickedChoice, choiceList: currChoices });
       setCurrChoices(choicesList);
       setCurrQuestion(question);
     }
     if (choice.title === 'Communication') {
-      setPageTitle('Communication');
+      // setPageTitle('Communication');
+      pageTitle.current = 'Communication'
+      image.current = '/titleImgCommunication.PNG'
       // setImage('/titleImgCommunication.PNG')
     }
-  }, [clickedChoice]);
+  }, [clickedChoice, currChoices, currQuestion]);
 
   useEffect(() => {
     if (clickedChoice !== null) {
@@ -60,27 +63,27 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
   }, []);
 
   const prevQuestion = () => {
-    if (prevSelectedContent.length > 1) {
+    if (prevSelectedContent.current.length > 2) {
       const i = 1;
       if (hasSolution) {
         updateChoicesAndQuestions(clickedChoice);
       }
-        setCurrQuestion(prevSelectedContent[prevSelectedContent.length-i].question);
-        setClickedChoice(prevSelectedContent[prevSelectedContent.length-i].prevChoice)
-        setCurrChoices(prevSelectedContent[prevSelectedContent.length-i].choiceList)
-        prevSelectedContent.pop()
-        // if (prevSelectedContent[prevSelectedContent.length-i-1].prevChoice.title == "Home"){
-        //   setPageTitle("Home")
-        //   setImage("/titleimghome.PNG")
-        // }
-        console.log("its length"+prevSelectedContent.length)
-        console.log("hassol"+hasSolution)
+      setCurrQuestion(prevSelectedContent.current[prevSelectedContent.current.length-i].question);
+      setClickedChoice(prevSelectedContent.current[prevSelectedContent.current.length-i].prevChoice)
+      setCurrChoices(prevSelectedContent.current[prevSelectedContent.current.length-i].choiceList)
+      prevSelectedContent.current.pop()
+      if (prevSelectedContent.current.length < 3){
+        pageTitle.current ="Home"
+        image.current = "/titleimghome.PNG"
+      }
+      console.log("its length"+prevSelectedContent.current.length)
+      console.log("hassol"+hasSolution)
       }
   };
 
   return (
     <div>
-    <Title hasPrev={(prevSelectedContent.length > 1)} prevQuestion={prevQuestion} titleImg={image} title={pageTitle} />
+    <Title hasPrev={(prevSelectedContent.current.length > 2)} prevQuestion={prevQuestion} titleImg={image.current} title={pageTitle.current} />
     {!hasSolution ? 
     <Stack
       spacing="xl"
