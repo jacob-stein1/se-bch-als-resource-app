@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { QuestionaireBodyContent } from '../QuestionaireBodyContentPages';
+import { QuestionaireBodyContent } from '../code/src/pages/QuestionairePage';
 
 describe('QuestionaireBodyContent', () => {
   it('renders without crashing', () => {

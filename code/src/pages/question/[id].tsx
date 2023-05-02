@@ -1,10 +1,10 @@
-import Title from '../../components/Title/Titles'
+import Title from '@/components/DynamicRoutesComponent/Titles'
 import { Stack, Text} from '@mantine/core';
-import { bodyContentUseStyles } from '../../components/MainBody/HelperFunctions/BodyContentStyle';
+import { bodyContentUseStyles } from '@/components/MainBody/HelperFunctions/BodyContentStyle';
 import { IChoice, IQuestion, ISolution } from "@/types/api_types";
 import { useEffect, useState } from "react";
 import { getNextQuestionOrSolution, getQuestionNChoices } from "../../utils/getAPI";
-import ToggleButton from "../../components/MainBody/TogglebButton";
+import ToggleButton from "@/components/DynamicRoutesComponent/TogglebButton";
 import { useRouter } from 'next/router';
 import Link from "next/link";
 

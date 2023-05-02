@@ -4,10 +4,11 @@ import {
   rem
 } from '@mantine/core';
 import { IconChevronLeft} from '@tabler/icons-react';
+import { NextRouter } from 'next/router';
 
 
 let img = ""
-const Titles = ({hasPrev, prevQuestion, titleImg, title}:{hasPrev: boolean, prevQuestion: () => any, titleImg: string, title: string}) => {
+const Titles = ({hasPrev, router, titleImg, title}:{hasPrev: boolean, router: NextRouter, titleImg: string, title: string}) => {
   img = titleImg
   const { classes} = useStyles();
   const ChevronIcon = IconChevronLeft;
@@ -19,7 +20,7 @@ const Titles = ({hasPrev, prevQuestion, titleImg, title}:{hasPrev: boolean, prev
         className={classes.chevron}
         size="2.5rem"
         stroke={2.5}
-        onClick={prevQuestion}
+        onClick={() => router.back()}
       />) : null}
       
       <div className={classes.inner}>
@@ -84,5 +85,6 @@ const useStyles = createStyles((theme) => ({
       textAlign: 'left',
     },
   },
+
 
 }));

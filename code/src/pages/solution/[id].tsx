@@ -6,7 +6,7 @@ import { HandoutOrTestimonialLink, PageContentType, ResourceLink } from '@/types
 import {getSolutionContent} from '../../utils/GetSolutionPageForChoice';
 import PageContent from '../../components/MainBody/SolutionPageContent/PageContent';
 import { useRouter } from 'next/router';
-import Title from '../../components/Title/Titles'
+import Title from '@/components/DynamicRoutesComponent/Titles'
 
 
 

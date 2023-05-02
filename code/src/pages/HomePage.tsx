@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import Title from '../components/Title/Titles'
+import Title from '@/components/DynamicRoutesComponent/Titles'
 import { Stack, Text} from '@mantine/core';
 import { IChoice, IQuestion } from '@/types/api_types';
 import { bodyContentUseStyles } from '../components/MainBody/HelperFunctions/BodyContentStyle';
 import { getChoices, getNextQuestionOrSolution } from '../utils/getAPI';
-import ToggleButton from '../components/MainBody/TogglebButton';
+import ToggleButton from '@/components/DynamicRoutesComponent/TogglebButton';
 import Link from "next/link";
 import { useRouter } from 'next/router';
 
