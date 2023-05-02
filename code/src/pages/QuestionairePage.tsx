@@ -9,7 +9,7 @@ import SolutionPages from './SolutionContent';
 
 let prevSelectedContent : IBodyContent[] = []
 
-export const QuestionaireBodyContent: React.FC = () => {
+const QuestionaireBodyContent: React.FC = () => {
   const { classes } = bodyContentUseStyles();
 
   let [currQuestion, setCurrQuestion] = useState<IQuestion>({id: "2", title:"How can I assist you?"});
@@ -107,3 +107,5 @@ export const QuestionaireBodyContent: React.FC = () => {
     </div>
   );
 };
+
+export default QuestionaireBodyContent
