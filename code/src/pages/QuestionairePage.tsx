@@ -7,79 +7,117 @@ import { bodyContentUseStyles } from '@/components/MainBody/HelperFunctions/Body
 import ToggleButton from '@/components/MainBody/TogglebButton';
 import SolutionPages from '../utils/SolutionContent';
 
-
-
-
 interface Props {}
 
 const QuestionaireBodyContent: React.FC<Props> = () => {
   const { classes } = bodyContentUseStyles();
 
+  // current question state
   const [currQuestion, setCurrQuestion] = useState<IQuestion>({ id: '2', title: 'How can I assist you?' });
+
+  // current choices state
   const [currChoices, setCurrChoices] = useState<IChoice[]>([]);
+
+  // currently clicked choice state
   const [clickedChoice, setClickedChoice] = useState<IChoice>({ id: '1', title: 'Home' });
+
+  // solution state
   const [solution, setSolution] = useState<ISolution>({ id: '', title: '' });
 
+  // whether solution has been found
   const [hasSolution, setHasSolution] = useState(false);
 
+  // page title ref
   const pageTitle = useRef('Home');
+
+  // image ref
   const image = useRef('/titleimghome.PNG');
 
+  // previously selected content ref
   const prevSelectedContent = useRef<IBodyContent[]>([]);
 
+  // memoized search function for questions and choices
   const memoizedSearchQuestionsChoicesFromJson = useMemo(() => {
     return async (choice: IChoice): Promise<[IQuestion, IChoice[], boolean, ISolution]> => {
       return await searchQuestionsChoicesFromJson(choice);
     };
   }, []);
 
+  // updates choices and questions for clicked choice
   const updateChoicesAndQuestions = useCallback(async (choice: IChoice) => {
+
+    // search for the next set of choices and question using the clicked choice
     const [question, choicesList, hasSol, sol] = await memoizedSearchQuestionsChoicesFromJson(choice);
+  
+    // set whether or not the next step has a solution
     setHasSolution(hasSol);
+  
+    // if the next step has a solution, set the solution
+    // otherwise, set the clicked choice
     if (hasSol) {
       setSolution(sol);
     } else {
       setSolution({ id: '', title: '' });
       setClickedChoice(choice);
     }
-    console.log(prevSelectedContent.current.length)
+  
+    // if the question title is not empty, save the current choices, question, and clicked choice
+    // in the previous selected content
     if (question.title !== '') {
-      prevSelectedContent.current.push({ question: currQuestion, prevChoice: clickedChoice, choiceList: currChoices });
+      prevSelectedContent.current.push({
+        question: currQuestion,
+        prevChoice: clickedChoice,
+        choiceList: currChoices,
+      });
+  
+      // set the new choices and question
       setCurrChoices(choicesList);
       setCurrQuestion(question);
     }
+  
+    // if the selected choice is Communication, set the page title to Communication
     if (choice.title === 'Communication') {
-      // setPageTitle('Communication');
-      pageTitle.current = 'Communication'
-      image.current = '/titleImgCommunication.png'
-      // setImage('/titleImgCommunication.PNG')
+      pageTitle.current = 'Communication';
+      image.current = '/titleImgCommunication.png';
     }
   }, [clickedChoice, currChoices, currQuestion]);
+  
 
+  // run effect only once when component mounts
   useEffect(() => {
     if (clickedChoice !== null) {
       updateChoicesAndQuestions(clickedChoice);
     }
   }, []);
 
+  /**
+   * Goes to the previous selected question and choices, and updates the current state with previous state
+   */
   const prevQuestion = () => {
     if (prevSelectedContent.current.length > 1) {
       const i = 1;
+
+      // if current question has solution
       if (hasSolution) {
         updateChoicesAndQuestions(clickedChoice);
       }
+
+      // update current state with previous state
       setCurrQuestion(prevSelectedContent.current[prevSelectedContent.current.length-i].question);
       setClickedChoice(prevSelectedContent.current[prevSelectedContent.current.length-i].prevChoice)
       setCurrChoices(prevSelectedContent.current[prevSelectedContent.current.length-i].choiceList)
+      
+      // remove previous state from the list
       prevSelectedContent.current.pop()
+
+      // set page title and image to default if previous state is not available
       if (prevSelectedContent.current.length < 2){
         pageTitle.current ="Home"
         image.current = "/titleimghome.PNG"
       }
-      console.log("its length"+prevSelectedContent.current.length)
-      console.log("hassol"+hasSolution)
-      }
+    }
   };
+
 
   return (
     <div>

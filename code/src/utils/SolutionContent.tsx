@@ -1,38 +1,45 @@
 import React, { Suspense, useEffect, useState } from 'react'
 import { bodyContentUseStyles } from '@/components/MainBody/HelperFunctions/BodyContentStyle';
-import { Stack, Text} from '@mantine/core';
+import { Stack, Text } from '@mantine/core';
 import ResourcesHandouts from '@/components/MainBody/SolutionPageContent/ResourcesHandouts';
 import { ISolution } from '@/types/api_types';
 import { HandoutOrTestimonialLink, PageContentType, ResourceLink } from '@/types/dataTypes';
 import getSolutionContent from './GetSolutionPageForChoice';
 import PageContent from '@/components/MainBody/SolutionPageContent/PageContent';
 
-
-interface SolutionContentProps{
+interface SolutionContentProps {
   solution: ISolution,
   hasSolution: boolean
 }
 
-// const PageContent = React.lazy(() => import('@/components/MainBody/SolutionPageContent/PageContent'))
-
-
-const SolutionPages: React.FC<SolutionContentProps> = ({solution, hasSolution}) => {
+/**
+ * This component displays the content for a solution page, including page content, resources,
+ * and handouts/testimonials.
+ *
+ * @param solution - The solution to display content for.
+ * @param hasSolution - Whether or not the solution has content to display.
+ */
+const SolutionPages: React.FC<SolutionContentProps> = ({ solution, hasSolution }): JSX.Element => {
   const { classes } = bodyContentUseStyles();
+
+  // State variables to hold page content data
   let [resourceList, setResourceList] = useState<ResourceLink[]>([])
   let [handoutTestimonialList, setHandoutTestimonialList] = useState<HandoutOrTestimonialLink[]>([])
   let [pageContent, setPageContent] = useState<PageContentType[]>([])
 
-  const getSolutionPageContent =async () => {
+  /**
+   * Fetches the solution page content (resources, handouts/testimonials, and page content).
+   */
+  const getSolutionPageContent = async (): Promise<void> => {
     let [_, resource_list, handouts_testimonials_list, page_content] = await getSolutionContent(solution.id)
     setResourceList(resource_list)
     setHandoutTestimonialList(handouts_testimonials_list)
     setPageContent(page_content)
   }
 
-  
-  
+  // Fetches solution page content if it has a solution and an id
   useEffect(() => {
-    if (hasSolution && solution.id != ""){
+    if (hasSolution && solution.id !== "") {
       getSolutionPageContent()
     }
   }, [hasSolution])
@@ -47,7 +54,10 @@ const SolutionPages: React.FC<SolutionContentProps> = ({solution, hasSolution}) 
             theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
         })}
       >
+        {/* Title */}
         <Text className={classes.text}> {solution.title} </Text>
+
+        {/* Page content */}
         {!pageContent.length ? (
           <></>
         ) : (
@@ -57,11 +67,15 @@ const SolutionPages: React.FC<SolutionContentProps> = ({solution, hasSolution}) 
             </Suspense>
           </div>
         )}
+
+        {/* Resources */}
         {!resourceList.length ? (
           <></>
         ) : (
           <ResourcesHandouts title={"Resources"} data={resourceList} />
         )}
+
+        {/* Handouts/testimonials */}
         {!handoutTestimonialList.length ? (
           <></>
         ) : (
@@ -74,4 +88,5 @@ const SolutionPages: React.FC<SolutionContentProps> = ({solution, hasSolution}) 
     </div>
   )
 }
+
 export default SolutionPages
