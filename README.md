@@ -7,6 +7,15 @@ People with ALS around the world are not offered a variety of clinical options. 
 
 The two primary users of this application (mobile or web app) would be patients with ALS or clinicians who work with ALS patients on occasion (such as primary care physicians etc).  The goal would be to provide them with a guided system that is constantly updated with the latest information. Each answer to a question or series of questions would lead the user down a different branch of questions and finally suggestions for the patient's current condition. The end goal would be creating a platform that helps distribute the information to patients and clinicians who might not have access to clinics with ALS experts. 
 
+### What we did
+Branch: main:
+-used strapi to update questions, choices, and resource page content
+-resource page includes vidoes, paragraphs, pdf and website links all fetched from strapi
+-created a dynamic questionaire
+Branch: dev:
+-created dynamic routes for each question. Used routeback to navigate to previous page after clickling back button
+-starter code for saving content into mongodb after clickling on save button
+
 
 ```bash
 npm install
@@ -38,6 +47,8 @@ To understand the API and pages, naviagte to the the Pages&APIDocs.md file in sr
 - UseEffect gets called twice during dev. Therefore, the back button may appear sooner, cause the page title not to render correctly. Useeffect is not a good option. Thus, we solved this in dev branch by using dynamic routes. It reroute to previous page when user clicks back button. <br><br> 
 
 - In dev branch, we used dynamic routes because it makes our code cleaner and easier to follow. In addition, it creates a page for each question. However, it currently can only be deployed as a dynamic website. To make it a static site, next team would need to usegetstatic paths to generate all pages during build. (Note: our teammate believes we should keep it dynamic as generating all pages at once wastes resources)
+
+- Our page rendering performance can be improved by using possibly dynamic routes. In addition, the back button is difficult to press. Thus, usecallback can also be useful there. 
 
 This is the back button
 
