@@ -30,7 +30,7 @@ nagivate to \backend_strapi to run strapi locally <br>
 npm install
 npm run develop
 ```
-<br> comment out this line to use the local version of strapi on your computer https://github.com/BU-Spark/se-bch-als-resource-app/blob/8bbdc2c0b6e2e775b7928429743426246e97d274/code/src/constants/globals.tsx#L2
+<br> uncomment this line to use the local version of strapi on your computer https://github.com/BU-Spark/se-bch-als-resource-app/blob/8bbdc2c0b6e2e775b7928429743426246e97d274/code/src/constants/globals.tsx#L2
 <br> ask me on merna.alghannam@gmail.com for access as an admin to strapi
 ### Tests
 cd to the Nextjs-Tests file, install the jest dependency and run tests. Detailed explantion in the TestDocs.md file
