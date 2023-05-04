@@ -1,5 +1,5 @@
 import React from 'react'
-import { Stack, createStyles, rem , Text, AspectRatio } from '@mantine/core';
+import { Stack, createStyles, Text} from '@mantine/core';
 
 
 const useStyles = createStyles((theme) => ({

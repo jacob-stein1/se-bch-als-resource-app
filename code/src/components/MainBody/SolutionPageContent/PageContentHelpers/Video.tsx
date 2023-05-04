@@ -1,6 +1,5 @@
 import React from 'react'
-import { Stack, createStyles, rem , Text, AspectRatio } from '@mantine/core';
-import { API_URL } from '@/constants/globals';
+import { Stack, createStyles, rem, AspectRatio } from '@mantine/core';
 
 
 const useStyles = createStyles((theme) => ({

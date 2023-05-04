@@ -52,7 +52,6 @@ const useStyles = createStyles((theme) => ({
 
 
 const VideoImageParaphsContent = ({data}: {data: PageContentType[]}) => {
-  const { classes } = useStyles()
 
   return (
     <div>
@@ -60,9 +59,9 @@ const VideoImageParaphsContent = ({data}: {data: PageContentType[]}) => {
       spacing="xl"
     >
     {data.map((pagetypecontent, index) => (
-      <div key={`${pagetypecontent.videoURL}-${index}`}>
-        {pagetypecontent.videoURL !== "" ? <Video url={pagetypecontent.videoURL} /> : null}
-        {pagetypecontent.paragraph !== "" ? <Paragraph paragraph={pagetypecontent.paragraph} /> : null}
+      <div key={pagetypecontent.videoURL} >
+        {pagetypecontent.videoURL !== "" ? <Video url={pagetypecontent.videoURL} key={pagetypecontent.videoURL} /> : null}
+        {pagetypecontent.paragraph !== "" ? <Paragraph paragraph={pagetypecontent.paragraph} key={pagetypecontent.paragraph} /> : null}
       </div>
     ))}
     </Stack>
