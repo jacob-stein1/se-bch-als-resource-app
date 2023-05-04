@@ -25,7 +25,7 @@ export const bodyContentUseStyles = createStyles((theme) => ({
       alignItems: 'center',
       alignContent: 'center',
       '&:hover': {
-        backgroundColor: '#254885',  color: "#FFFFFF", text:  '#254885',
+        backgroundColor: '#254885',  color: "#FFFFFF",
     },
     },
   },

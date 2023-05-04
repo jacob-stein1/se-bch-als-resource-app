@@ -50,26 +50,30 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
     const [question, choicesList, hasSol, sol] = await memoizedSearchQuestionsChoicesFromJson(choice);
   
     // set whether or not the next step has a solution
-    setHasSolution(hasSol);
+    // setHasSolution(hasSol);
   
     // if the next step has a solution, set the solution
     // otherwise, set the clicked choice
     if (hasSol) {
+      console.log("hi sol")
       setSolution(sol);
-    } else {
+      setHasSolution(true);
+    } 
+    else {
       setSolution({ id: '', title: '' });
       setClickedChoice(choice);
+      setHasSolution(false);
     }
   
     // if the question title is not empty, save the current choices, question, and clicked choice
     // in the previous selected content
-    if (question.title !== '') {
+    if (question.title !== '' && !hasSol) {
+      console.log("hiii")
       prevSelectedContent.current.push({
         question: currQuestion,
         prevChoice: clickedChoice,
         choiceList: currChoices,
       });
-  
       // set the new choices and question
       setCurrChoices(choicesList);
       setCurrQuestion(question);
@@ -92,15 +96,16 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
 
   /**
    * Goes to the previous selected question and choices, and updates the current state with previous state
-   */
-  const prevQuestion = () => {
+   *///the way we fetch fprevious question was fixed during dev by using reroute
+  const prevQuestion = useCallback(() => {
     if (prevSelectedContent.current.length > 1) {
       const i = 1;
 
-      // if current question has solution
-      if (hasSolution) {
-        updateChoicesAndQuestions(clickedChoice);
-      }
+    // if current question has solution
+    if (hasSolution) {
+      setHasSolution(false)
+      return
+    }
 
       // update current state with previous state
       setCurrQuestion(prevSelectedContent.current[prevSelectedContent.current.length-i].question);
@@ -109,15 +114,16 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
       
       // remove previous state from the list
       prevSelectedContent.current.pop()
+      console.log(prevSelectedContent.current.length)
 
       // set page title and image to default if previous state is not available
       if (prevSelectedContent.current.length < 2){
         pageTitle.current ="Home"
         image.current = "/titleimghome.PNG"
       }
-    }
-  };
 
+    }
+  }, [prevSelectedContent, hasSolution, updateChoicesAndQuestions, clickedChoice]);
 
   return (
     <div>
