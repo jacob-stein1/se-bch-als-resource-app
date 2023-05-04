@@ -46,13 +46,6 @@ https://docs.google.com/presentation/d/11JwhtYG3_TAnesC0EPIhte9aymyAj1dD0EDDxbxz
 
 <img width="875" alt="Screenshot 2023-05-02 at 5 49 11 PM" src="https://user-images.githubusercontent.com/86805856/235793618-32ef3573-40b2-4ad6-acb2-ac6d1a01c521.png">
 
-
-
-### Tests
-cd to the Nextjs-Tests file, install the jest dependency and run tests. Detailed explantion in the TestDocs.md file
-
-<img width="285" alt="Screenshot 2023-05-02 at 5 41 41 PM" src="https://user-images.githubusercontent.com/86805856/235793030-dfd1807f-3157-4a73-a605-c2cae6f6e88e.png">
-
 ### Files
 To modify components you can go to /src/components. Details for the components, constants,
 images and styles are in the ComponentDocs.md file.
