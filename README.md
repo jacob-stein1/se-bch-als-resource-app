@@ -16,11 +16,22 @@ Branch: dev:<br>
 -created dynamic routes for each question. Used routeback to navigate to previous page after clickling back button <br>
 -starter code for saving content into mongodb after clickling on save button <br>
 
-
+### Run Project
+Frontend: <br>
+nagivate to \code <br>
 ```bash
 npm install
 npm run dev
 ```
+
+Strapi: <br>
+nagivate to \backend_strapi to run strapi locally <br>
+```bash
+npm install
+npm run develop
+```
+<br> comment out this line to use the local version of strapi on your computer https://github.com/BU-Spark/se-bch-als-resource-app/blob/8bbdc2c0b6e2e775b7928429743426246e97d274/code/src/constants/globals.tsx#L2
+<br> ask me on merna.alghannam@gmail.com for access as an admin to strapi
 ### Tests
 cd to the Nextjs-Tests file, install the jest dependency and run tests. Detailed explantion in the TestDocs.md file
 
