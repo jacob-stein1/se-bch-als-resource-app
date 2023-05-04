@@ -6,6 +6,7 @@ const HEADER_HEIGHT = rem(64);
 const useStyles = createStyles(() => ({
   inner: {
     height: HEADER_HEIGHT,
+    width: HEADER_HEIGHT,
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
