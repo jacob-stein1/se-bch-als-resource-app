@@ -8,7 +8,7 @@ const useStyles = createStyles((theme) => ({
   inner: {
     height: '57px',
     display: 'flex',
-    width: '87%',
+    width: '100%',
     // backgroundColor: 'transparent',
     color: '#254885',
     border: '2px solid #254885',
@@ -18,9 +18,12 @@ const useStyles = createStyles((theme) => ({
     alignItems: 'center',
     alignContent: 'center',
     cursor: 'pointer',
-    // '&:hover': {
-    //     backgroundColor: '#254885',  color: "#FFFFFF",
-    // },
+
+  //   [theme.fn.smallerThan('xs')]: {
+  //     '&:hover': {
+  //       backgroundColor: '#254885',  color: "#FFFFFF", text:  '#254885',
+  //   },
+  // },
   },
 
   text: {
