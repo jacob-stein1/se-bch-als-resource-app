@@ -48,7 +48,7 @@ To understand the API and pages, naviagte to the the Pages&APIDocs.md file in sr
 
 - In dev branch, we used dynamic routes because it makes our code cleaner and easier to follow. In addition, it creates a page for each question. However, it currently can only be deployed as a dynamic website. To make it a static site, next team would need to usegetstatic paths to generate all pages during build. (Note: our teammate believes we should keep it dynamic as generating all pages at once wastes resources)
 
-- Our page rendering performance can be improved by using possibly dynamic routes. In addition, the back button is difficult to press. Thus, usecallback can also be useful there. 
+- Our page rendering performance can be improved by using possibly dynamic routes (working starter code in dev branch). In addition, the back button is difficult to press. Thus, usecallback can also be useful there. 
 
 This is the back button
 
