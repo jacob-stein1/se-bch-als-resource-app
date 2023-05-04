@@ -6,18 +6,16 @@ import {
 import { IconChevronLeft} from '@tabler/icons-react';
 
 
-let img = ""
 const Titles = ({hasPrev, prevQuestion, titleImg, title}:{hasPrev: boolean, prevQuestion: () => any, titleImg: string, title: string}) => {
-  img = titleImg
   const { classes} = useStyles();
   const ChevronIcon = IconChevronLeft;
 
   return (
-    <div className={classes.wrapper}>
+    <div className={classes.wrapper} style={{ backgroundImage: `linear-gradient(0deg, rgba(0, 48, 135, 0.5), rgba(0, 48, 135, 0.5)), url(${titleImg})` }}>
         {hasPrev ? (
         <ChevronIcon
         className={classes.chevron}
-        size="2.5rem"
+        size="3.2rem"
         stroke={2.5}
         onClick={prevQuestion}
       />) : null}
@@ -44,16 +42,15 @@ const useStyles = createStyles((theme) => ({
   },
   wrapper: {
     position: 'relative',
-    paddingTop: rem(10),
-    paddingBottom: rem(100),
-    backgroundImage: 'linear-gradient(0deg, rgba(0, 48, 135, 0.5), rgba(0, 48, 135, 0.5)), url('+img+')',
+    // paddingTop: rem(10),
+    // paddingBottom: rem(100),
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: rem(203),
 
     [theme.fn.smallerThan('xs')]: {
-      paddingTop: rem(80),
-      paddingBottom: rem(50),
+      // paddingTop: rem(10),
+      // paddingBottom: rem(100),
     },
   },
   inner: {

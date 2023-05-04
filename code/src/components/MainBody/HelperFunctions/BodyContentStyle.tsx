@@ -59,8 +59,8 @@ export const bodyContentUseStyles = createStyles((theme) => ({
   },
 
   outer: {
-    // paddingTop: rem(24),
-    // pddingBottom: rem(24),
+    paddingTop: '5%',
+    pddingBottom: '10%',
     
     paddingLeft: '10%',
     paddingRight: '10%',

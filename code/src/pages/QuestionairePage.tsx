@@ -13,7 +13,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
   const { classes } = bodyContentUseStyles();
 
   // current question state
-  const [currQuestion, setCurrQuestion] = useState<IQuestion>({ id: '2', title: 'How can I assist you?' });
+  const [currQuestion, setCurrQuestion] = useState<IQuestion>({ id: '2', title: 'Which area do you want to look into?' });
 
   // current choices state
   const [currChoices, setCurrChoices] = useState<IChoice[]>([]);
