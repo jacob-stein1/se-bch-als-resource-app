@@ -34,11 +34,14 @@ DOCUMENTATION:
     -> types
         -> api_types.tsx
         -> dataTypes.tsx
+    -> utils
+        -> GetSolutionPageForChoices.tsx
+        -> TempNextQuestionChoices.tsx
     -> Docs.md
 
 
 ### Pages
-    * api
+    * utils
         * GetSolutionPageForChoices.tsx
             * getSolutionContent.ts
                 * fetchAnyData(APIURL: string): Promise\<any>
