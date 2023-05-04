@@ -32,13 +32,6 @@ npm run develop
 ```
 <br> uncomment this line to use the local version of strapi on your computer https://github.com/BU-Spark/se-bch-als-resource-app/blob/8bbdc2c0b6e2e775b7928429743426246e97d274/code/src/constants/globals.tsx#L2
 <br> ask me on merna.alghannam@gmail.com for access as an admin to strapi
-### Tests
-cd to the Nextjs-Tests file, install the jest dependency and run tests. Detailed explantion in the TestDocs.md file
-
-<img width="285" alt="Screenshot 2023-05-02 at 5 41 41 PM" src="https://user-images.githubusercontent.com/86805856/235793030-dfd1807f-3157-4a73-a605-c2cae6f6e88e.png">
-
-
-Move the tests to "__ test __" folder in pages folder. Then run 'npm run test'. Make sure you have jest installed. For more instructions, navigate to docs in tests folder.
 
 ## Getting Started
 
@@ -340,13 +333,20 @@ DOCUMENTATION:
 Docs Written by @ArkashJ, contact for assistance
 DOCUMENTATION
 
----> Tests
+---> Nextjs-Tests
     -> index.tests.tsx
     -> QuestionnareBodyContent.tests.tsx
     -> Questionnare.tests.tsx
     -> SolutionPages.tests.tsx
 
 All these tests check whether the components have been rendered or not
+
+cd to the Nextjs-Tests file, install the jest dependency and run tests. Detailed explantion in the TestDocs.md file
+
+<img width="285" alt="Screenshot 2023-05-02 at 5 41 41 PM" src="https://user-images.githubusercontent.com/86805856/235793030-dfd1807f-3157-4a73-a605-c2cae6f6e88e.png">
+
+
+Move the tests to "__ test __" folder in pages folder. Then run 'npm run test'. Make sure you have jest installed. For more instructions, navigate to docs in tests folder.
 
 Commands to Run:
 $ npm run test
