@@ -33,7 +33,12 @@ To understand the API and pages, naviagte to the the Pages&APIDocs.md file in sr
 
 ### Bugs and errors
 
-Our tests do not run during deployment due to dependency issues. However, we can run it during development by calling npm run test. Then, we push.
+- Our tests do not run during deployment due to dependency issues. However, we can run it during development by calling npm run test.
+
+- UseEffect getts called during dev. Therefore, the back button may appear sooner. We solved this in dev branch by using dynamic routes. Then, reroute to previous page when user clicks back button. <br><br>
+
+This is the back button
+
 
 ### Deployment
 
