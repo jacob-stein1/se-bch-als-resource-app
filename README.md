@@ -20,3 +20,15 @@ images and styles are in the ComponentDocs.md file.
 ### API and Pages
 To understand the API and pages, naviagte to the the Pages&APIDocs.md file in src.
 <img width="489" alt="Screenshot 2023-05-02 at 5 41 05 PM" src="https://user-images.githubusercontent.com/86805856/235792972-93dc9152-dc3a-4bfa-89c6-942290798f1d.png">
+
+### Bugs and errors
+
+Our tests do not run during deployment due to dependency issues. However, we can run it during development by calling npm run test. Then, we push.
+
+### Deployment
+
+We deployed the frontend in vercel. The link the test can be found in the side of the repo
+https://se-bch-als-resource-app.vercel.app/
+
+In addition, we deployed strapi on railway
+Link: https://se-bch-als-resource-app-production.up.railway.app
