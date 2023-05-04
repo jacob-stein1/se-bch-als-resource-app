@@ -5,7 +5,12 @@ import {
 } from '@mantine/core';
 import { IconChevronLeft} from '@tabler/icons-react';
 
+/**
+ * Titles component 
+ */
 
+
+//displays the title passed as a prop and applies custom styles from useStyles
 const Titles = ({hasPrev, prevQuestion, titleImg, title}:{hasPrev: boolean, prevQuestion: () => any, titleImg: string, title: string}) => {
   const { classes} = useStyles();
   const ChevronIcon = IconChevronLeft;
@@ -14,12 +19,13 @@ const Titles = ({hasPrev, prevQuestion, titleImg, title}:{hasPrev: boolean, prev
     <div className={classes.wrapper} style={{ backgroundImage: `linear-gradient(0deg, rgba(0, 48, 135, 0.5), rgba(0, 48, 135, 0.5)), url(${titleImg})` }}>
         {hasPrev ? (
         <ChevronIcon
+        // displays only if hasPrev is true, onClick triggers prevQuestion function
         className={classes.chevron}
         size="3.4rem"
         stroke={2}
         onClick={prevQuestion}
       />) : null}
-      
+      {/* Return a <div> that contains the ChevronIcon and the Title component */}
       <div className={classes.inner}>
         <Title className={classes.title}>
           {title}
