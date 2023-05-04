@@ -1,5 +1,7 @@
 import { createStyles, rem } from '@mantine/core';
 
+
+
 export const bodyContentUseStyles = createStyles((theme) => ({
   inner: {
     height: '57px',
