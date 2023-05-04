@@ -50,6 +50,8 @@ To understand the API and pages, naviagte to the the Pages&APIDocs.md file in sr
 
 - Our page rendering performance can be improved by using possibly dynamic routes (working starter code in dev branch). In addition, the back button is difficult to press. Thus, usecallback can also be useful there. 
 
+- When the page load is slow, it does not show a loading icon
+
 This is the back button
 
 
