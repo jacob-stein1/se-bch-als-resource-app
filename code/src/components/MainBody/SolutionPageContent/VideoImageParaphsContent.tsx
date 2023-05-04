@@ -58,10 +58,10 @@ const VideoImageParaphsContent = ({data}: {data: PageContentType[]}) => {
       <Stack
       spacing="xl"
     >
-    {data.map((pagetypecontent, index) => (
-      <div key={pagetypecontent.videoURL} >
-        {pagetypecontent.videoURL !== "" ? <Video url={pagetypecontent.videoURL} key={pagetypecontent.videoURL} /> : null}
-        {pagetypecontent.paragraph !== "" ? <Paragraph paragraph={pagetypecontent.paragraph} key={pagetypecontent.paragraph} /> : null}
+    {data.map((pagetypecontent, index) => ( 
+      <div key={index}>
+        {pagetypecontent.videoURL !== "" ? <Video url={pagetypecontent.videoURL}/> : null}
+        {pagetypecontent.paragraph !== "" ? <Paragraph paragraph={pagetypecontent.paragraph} /> : null}
       </div>
     ))}
     </Stack>
