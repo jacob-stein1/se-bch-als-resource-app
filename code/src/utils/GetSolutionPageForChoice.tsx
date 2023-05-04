@@ -1,5 +1,5 @@
-import { HandoutOrTestimonialLink, PageContentType, ResourceLink } from "@/types/dataTypes";
-import { API_URL } from '@/constants/globals';
+import { HandoutOrTestimonialLink, PageContentType, ResourceLink } from "../types/dataTypes";
+import { API_URL } from '../constants/globals';
 
 /**
  * Fetches data from the specified API URL.

@@ -1,10 +1,10 @@
 import { Stack, Text } from '@mantine/core';
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
-import Title from '@/components/Title/Titles';
-import { IQuestion, IChoice, IBodyContent, ISolution } from '@/types/api_types';
+import Title from '../components/Title/Titles';
+import { IQuestion, IChoice, IBodyContent, ISolution } from '../types/api_types';
 import searchQuestionsChoicesFromJson from '../utils/TempGetNextQuestion';
-import { bodyContentUseStyles } from '@/components/MainBody/HelperFunctions/BodyContentStyle';
-import ToggleButton from '@/components/MainBody/TogglebButton';
+import { bodyContentUseStyles } from '../components/MainBody/HelperFunctions/BodyContentStyle';
+import ToggleButton from '../components/MainBody/TogglebButton';
 import SolutionPages from '../utils/SolutionContent';
 
 interface Props {}

@@ -1,5 +1,5 @@
-import { IChoice, IQuestion, ISolution } from '@/types/api_types';
-import { API_URL } from '@/constants/globals';
+import { IChoice, IQuestion, ISolution } from '../types/api_types';
+import { API_URL } from '../constants/globals';
 
 /**
  * Fetches data from the API at the given URL and returns it as JSON.
