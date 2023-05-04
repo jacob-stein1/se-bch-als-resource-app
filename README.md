@@ -7,15 +7,6 @@ People with ALS around the world are not offered a variety of clinical options. 
 
 The two primary users of this application (mobile or web app) would be patients with ALS or clinicians who work with ALS patients on occasion (such as primary care physicians etc).  The goal would be to provide them with a guided system that is constantly updated with the latest information. Each answer to a question or series of questions would lead the user down a different branch of questions and finally suggestions for the patient's current condition. The end goal would be creating a platform that helps distribute the information to patients and clinicians who might not have access to clinics with ALS experts. 
 
-### What we did
-Branch: main: <br>
--used strapi to update questions, choices, and resource page content <br>
--resource page includes vidoes, paragraphs, pdf and website links all fetched from strapi <br>
--created a dynamic questionaire <br>
-Branch: dev:<br>
--created dynamic routes for each question. Used routeback to navigate to previous page after clickling back button <br>
--starter code for saving content into mongodb after clickling on save button <br>
-
 ### Run Project
 Frontend: <br>
 nagivate to \code <br>
@@ -368,6 +359,14 @@ To understand the API and pages, naviagte to the the Pages&APIDocs.md file in sr
 
 This is the back button
 
+### Summary of we did
+Branch: main: <br>
+-used strapi to update questions, choices, and resource page content <br>
+-resource page includes vidoes, paragraphs, pdf and website links all fetched from strapi <br>
+-created a dynamic questionaire <br>
+Branch: dev:<br>
+-created dynamic routes for each question. Used routeback to navigate to previous page after clickling back button <br>
+-starter code for saving content into mongodb after clickling on save button <br>
 
 ### Deployment
 
