@@ -35,7 +35,7 @@ To understand the API and pages, naviagte to the the Pages&APIDocs.md file in sr
 
 - Our tests do not run during deployment due to dependency issues. However, we can run it during development by calling npm run test.
 
-- UseEffect getts called during dev. Therefore, the back button may appear sooner. We solved this in dev branch by using dynamic routes. Then, reroute to previous page when user clicks back button. <br><br>
+- UseEffect gets called twice during dev. Therefore, the back button may appear sooner, cause the page title not to render correctly. Useeffect is not a good option. Thus, we solved this in dev branch by using dynamic routes. It reroute to previous page when user clicks back button. <br><br>
 
 This is the back button
 
