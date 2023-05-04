@@ -15,8 +15,8 @@ const Titles = ({hasPrev, prevQuestion, titleImg, title}:{hasPrev: boolean, prev
         {hasPrev ? (
         <ChevronIcon
         className={classes.chevron}
-        size="3.2rem"
-        stroke={2.5}
+        size="3.4rem"
+        stroke={2}
         onClick={prevQuestion}
       />) : null}
       
@@ -36,7 +36,7 @@ const useStyles = createStyles((theme) => ({
   chevron: {
     transition: 'transform 200ms ease',
     position: "absolute", 
-    left: "2.02%", 
+    left: rem(14), 
     top: "15.36%", 
     color: "#FFFFFF"
   },
@@ -75,10 +75,12 @@ const useStyles = createStyles((theme) => ({
     textAlign: 'left',
     fontFamily: `Montserrat, ${theme.fontFamily}`,
     lineHeight: rem(51),
+    paddingLeft: rem(10),
 
     [theme.fn.smallerThan('xs')]: {
       fontSize: rem(35),
       textAlign: 'left',
+      paddingLeft: rem(10),
     },
   },
 

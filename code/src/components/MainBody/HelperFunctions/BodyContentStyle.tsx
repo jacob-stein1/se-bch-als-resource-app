@@ -59,7 +59,7 @@ export const bodyContentUseStyles = createStyles((theme) => ({
   },
 
   outer: {
-    paddingTop: '5%',
+    paddingTop: rem(26),
     pddingBottom: '10%',
     
     paddingLeft: '10%',
