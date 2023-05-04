@@ -9,7 +9,7 @@ cd to the Nextjs-Tests file, install the jest dependency and run tests. Detailed
 
 <img width="285" alt="Screenshot 2023-05-02 at 5 41 41 PM" src="https://user-images.githubusercontent.com/86805856/235793030-dfd1807f-3157-4a73-a605-c2cae6f6e88e.png">
 
-Move the tests to "__test__" folder in pages folder. Then run npm run test
+Move the tests to "___test___" folder in pages folder. Then run npm run test
 
 ### Files
 To modify components you can go to /src/components. Details for the components, constants,
