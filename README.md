@@ -40,3 +40,7 @@ https://se-bch-als-resource-app.vercel.app/
 
 In addition, we deployed strapi on railway
 Link: https://se-bch-als-resource-app-production.up.railway.app
+
+You can contact me t merna.alghannam@gmail.com for access to strapi. 
+
+In addition, we have provided a folder called strapi, which contains all content of strapi for reference.
