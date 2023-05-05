@@ -3,6 +3,12 @@ import { Stack, createStyles, rem , Text, Button } from '@mantine/core';
 import { ResourceLink } from '@/types/dataTypes';
 import { IconFileDescription } from '@tabler/icons-react';
 
+/**
+ * Resources component for the solution page
+ * @param title - the title of the resources section
+ */
+
+
 
 const useStyles = createStyles((theme) => ({
   inner: {
@@ -38,6 +44,7 @@ const useStyles = createStyles((theme) => ({
     textAlign: 'left',
     fontFamily: `Montserrat, ${theme.fontFamily}`,
     // lineHeight: rem(16),
+    // media query for smaller than 'xs' screen sizes (fontSize, textAlign, width)
     [theme.fn.smallerThan('xs')]: {
       fontSize: rem(20),
       textAlign: 'left',
@@ -52,10 +59,12 @@ const useStyles = createStyles((theme) => ({
   },
 }))
 
-
+// Resources component accepts a title prop (string) and a data prop (ResourceLink[])
 const Resources = ({title, data}: {title: String,data: ResourceLink[]}) => {
   const { classes } = useStyles()
-
+  // Iterates through the data array and renders a Button component for each resource
+  // Button component has a leftIcon and is styled with the inner class from useStyles
+  // Wrapped in a Stack component with spacing set to "xl"
 
   return (
     <div>
