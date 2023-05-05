@@ -55,7 +55,6 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
       // if the next step has a solution, set the solution
       // otherwise, set the clicked choice
       if (hasSol) {
-        console.log("hi sol")
         setSolution(sol);
         setHasSolution(true);
       } 
@@ -68,7 +67,6 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
       // if the question title is not empty, save the current choices, question, and clicked choice
       // in the previous selected content
       if (question.title !== '' && !hasSol) {
-        console.log("hiii")
         prevSelectedContent.current.push({
           question: currQuestion,
           prevChoice: clickedChoice,
@@ -118,7 +116,6 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
       
       // remove previous state from the list
       prevSelectedContent.current.pop()
-      console.log(prevSelectedContent.current.length)
 
       // set page title and image to default if previous state is not available
       if (prevSelectedContent.current.length < 2){
