@@ -348,8 +348,6 @@ To understand the API and pages, naviagte to the the Pages&APIDocs.md file in sr
 
 ### Bugs and errors
 
-- Our tests do not run during deployment due to dependency issues. However, we can run it during development by calling npm run test.
-
 - UseEffect gets called twice during dev. Therefore, the back button may appear sooner, cause the page title not to render correctly. Useeffect is not a good option. Thus, we solved this in dev branch by using dynamic routes. It reroute to previous page when user clicks back button. <br><br> 
 
 - In dev branch, we used dynamic routes because it makes our code cleaner and easier to follow. In addition, it creates a page for each question. However, it currently can only be deployed as a dynamic website. To make it a static site, next team would need to usegetstatic paths to generate all pages during build. (Note: our teammate believes we should keep it dynamic as generating all pages at once wastes resources)
