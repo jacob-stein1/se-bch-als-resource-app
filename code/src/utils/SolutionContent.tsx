@@ -26,15 +26,20 @@ const SolutionPages: React.FC<SolutionContentProps> = ({ solution, hasSolution }
   let [resourceList, setResourceList] = useState<ResourceLink[]>([])
   let [handoutTestimonialList, setHandoutTestimonialList] = useState<HandoutOrTestimonialLink[]>([])
   let [pageContent, setPageContent] = useState<PageContentType[]>([])
+  let [error, setError] = useState<string>("")
 
   /**
    * Fetches the solution page content (resources, handouts/testimonials, and page content).
    */
   const getSolutionPageContent = async (): Promise<void> => {
-    let [_, resource_list, handouts_testimonials_list, page_content] = await getSolutionContent(solution.id)
-    setResourceList(resource_list)
-    setHandoutTestimonialList(handouts_testimonials_list)
-    setPageContent(page_content)
+    try {
+      let [_, resource_list, handouts_testimonials_list, page_content] = await getSolutionContent(solution.id)
+      setResourceList(resource_list)
+      setHandoutTestimonialList(handouts_testimonials_list)
+      setPageContent(page_content)
+    } catch (e) {
+      setError("Error fetching solution page content")
+    }
   }
 
   // Fetches solution page content if it has a solution and an id
@@ -43,6 +48,10 @@ const SolutionPages: React.FC<SolutionContentProps> = ({ solution, hasSolution }
       getSolutionPageContent()
     }
   }, [hasSolution])
+
+  if (error) {
+    return <div>Error: {error}</div>
+  }
 
   return (
     <div>

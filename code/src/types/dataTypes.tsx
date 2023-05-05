@@ -11,6 +11,7 @@ export type HandoutOrTestimonialLink = {
 }
 
 export type PageContentType = {
+  id: string;
   paragraph: string;
   imageURL: string;
   videoURL: string;

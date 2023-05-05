@@ -94,21 +94,22 @@ Parses the page content from the specified solution JSON data.
 */
 function getPageContent(api_url: string, solution_json : any) : PageContentType[]{
   let temp_pageContentList : PageContentType[] = []
+  let element : any = solution_json.data.attributes.Block
   // If the "Block" field exists in the solution data
-  if(solution_json.data.attributes.Block){
+  if(element){
   // Iterate over each element in the "Block" array
-  for (const element of solution_json.data.attributes.Block) {
-  // If the element represents a video, add the video URL to the page content list
-  if (element.__component == "video.video"){
-  temp_pageContentList.push({paragraph: "", imageURL: "", videoURL: api_url+element.VideoMedia.data.attributes.url})
-  // If the element represents a description, add the description paragraph to the page content list
-  }else if (element.__component == "description-paragraphs.description-paragraphs"){
-  temp_pageContentList.push({paragraph: element.DescriptionParagraph, imageURL: "", videoURL: ""})
-  // If the element represents an image, add the image URL to the page content list
-  } else if (element.__component == "image.image"){
-  temp_pageContentList.push({paragraph: "", imageURL: api_url+element.ImageMedia.data.attributes.formats.thumbnail.url, videoURL: ""})
-  }
-  }
+    for (let j = 0; j < element.length; j++) {
+      // If the element represents a video, add the video URL to the page content list
+      if (element[j].__component == "video.video"){
+        temp_pageContentList.push({id:""+j, paragraph: "", imageURL: "", videoURL: api_url+element[j].VideoMedia.data.attributes.url})
+        // If the element represents a description, add the description paragraph to the page content list
+      }else if (element[j].__component == "description-paragraphs.description-paragraphs"){
+        temp_pageContentList.push({id:""+j, paragraph: element[j].DescriptionParagraph, imageURL: "", videoURL: ""})
+        // If the element represents an image, add the image URL to the page content list
+      } else if (element[j].__component == "image.image"){
+        temp_pageContentList.push({id:""+j, paragraph: "", imageURL: api_url+element[j].ImageMedia.data.attributes.formats.thumbnail.url, videoURL: ""})
+      }
+    }
   }
   
   return temp_pageContentList
@@ -122,28 +123,28 @@ function getPageContent(api_url: string, solution_json : any) : PageContentType[
   If an error occurs, the function returns an array of empty values.
   */
   export default async function getSolutionContent(solutionId : string): Promise<[string, ResourceLink[], HandoutOrTestimonialLink[], PageContentType[]]> {
-  let resourceList : ResourceLink[] = [];
-  let handoutsOrTestimonialsList : HandoutOrTestimonialLink[] = [];
-  let pageContentList : PageContentType[] = []
-  try {
-  // Fetch the solution data for the specified ID
-  const solution_json = await fetchAnyData(API_URL+"/api/solutions/"+solutionId+"?populate=deep,3")
-  // Get the solution title from the solution data
-  const title = solution_json.data.attributes.Title
-  // Get the handouts or testimonials links from the solution data
-handoutsOrTestimonialsList = getTestimonialOrHandoutContent(API_URL, solution_json)
+    let resourceList : ResourceLink[] = [];
+    let handoutsOrTestimonialsList : HandoutOrTestimonialLink[] = [];
+    let pageContentList : PageContentType[] = []
+    try {
+      // Fetch the solution data for the specified ID
+      const solution_json = await fetchAnyData(API_URL+"/api/solutions/"+solutionId+"?populate=deep,3")
+      // Get the solution title from the solution data
+      const title = solution_json.data.attributes.Title
+      // Get the handouts or testimonials links from the solution data
+      handoutsOrTestimonialsList = getTestimonialOrHandoutContent(API_URL, solution_json)
 
-// Get the resource links from the solution data
-resourceList = getResourceContent(solution_json)
+      // Get the resource links from the solution data
+      resourceList = getResourceContent(solution_json)
 
-// Get the page content from the solution data
-pageContentList = getPageContent(API_URL, solution_json)
+      // Get the page content from the solution data
+      pageContentList = getPageContent(API_URL, solution_json)
 
-// Return an array containing the solution title, resource links, handouts or testimonials links, and page content
-return [title, resourceList, handoutsOrTestimonialsList, pageContentList]
-} catch (error) {
-  console.error(error);
-  // Handle the error as needed, e.g. show a notification to the user
-  return ['', [], [], []];
-  }
+      // Return an array containing the solution title, resource links, handouts or testimonials links, and page content
+      return [title, resourceList, handoutsOrTestimonialsList, pageContentList]
+    } catch (error) {
+      console.error(error);
+      // Handle the error as needed, e.g. show a notification to the user
+      return ['', [], [], []];
+    }
   }

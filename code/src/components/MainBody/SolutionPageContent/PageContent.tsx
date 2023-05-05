@@ -14,10 +14,10 @@ const PageContent = ({data}: {data: PageContentType[]}) => {
       spacing="xl"
     >
       {data.map((pageContent) => ( 
-        <>
-        {pageContent.videoURL != "" ? <Video key={pageContent.videoURL} url={pageContent.videoURL}/> : <></> }
-        {pageContent.paragraph != "" ? <Paragraph key={pageContent.paragraph} paragraph={pageContent.paragraph}/> : <></> }
-        </>
+         <React.Fragment key={pageContent.id}>
+        {pageContent.videoURL != "" ? <Video url={pageContent.videoURL}/> : <></> }
+        {pageContent.paragraph != "" ? <Paragraph paragraph={pageContent.paragraph}/> : <></> }
+        </React.Fragment>
       ))}
     </Stack>
     </div> 

@@ -61,13 +61,6 @@ const Video = ({url}:{url: string}) => {
       })}>
       {/* <Text className={classes.text}> {"Letter Cueing"} </Text> */}
         <AspectRatio ratio={5/3} maw={2000} mah={600} className={classes.video}>
-            {/* <iframe
-                    src={API_URL+"/uploads/What_is_ALS_fd603e4807.mp4"}
-                    title="YouTube video player"
-                    frameBorder="0"
-                    // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                /> */}
         <video controls >
               <source src={url} type="video/mp4"/>
         </video>

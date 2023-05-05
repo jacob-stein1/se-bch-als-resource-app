@@ -45,44 +45,48 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
 
   // updates choices and questions for clicked choice
   const updateChoicesAndQuestions = useCallback(async (choice: IChoice) => {
-
-    // search for the next set of choices and question using the clicked choice
-    const [question, choicesList, hasSol, sol] = await memoizedSearchQuestionsChoicesFromJson(choice);
-  
-    // set whether or not the next step has a solution
-    // setHasSolution(hasSol);
-  
-    // if the next step has a solution, set the solution
-    // otherwise, set the clicked choice
-    if (hasSol) {
-      console.log("hi sol")
-      setSolution(sol);
-      setHasSolution(true);
-    } 
-    else {
-      setSolution({ id: '', title: '' });
-      setClickedChoice(choice);
-      setHasSolution(false);
-    }
-  
-    // if the question title is not empty, save the current choices, question, and clicked choice
-    // in the previous selected content
-    if (question.title !== '' && !hasSol) {
-      console.log("hiii")
-      prevSelectedContent.current.push({
-        question: currQuestion,
-        prevChoice: clickedChoice,
-        choiceList: currChoices,
-      });
-      // set the new choices and question
-      setCurrChoices(choicesList);
-      setCurrQuestion(question);
-    }
-  
-    // if the selected choice is Communication, set the page title to Communication
-    if (choice.title === 'Communication') {
-      pageTitle.current = 'Communication';
-      image.current = '/titleImgCommunication.png';
+    try {
+      // search for the next set of choices and question using the clicked choice
+      const [question, choicesList, hasSol, sol] = await memoizedSearchQuestionsChoicesFromJson(choice);
+    
+      // set whether or not the next step has a solution
+      // setHasSolution(hasSol);
+    
+      // if the next step has a solution, set the solution
+      // otherwise, set the clicked choice
+      if (hasSol) {
+        console.log("hi sol")
+        setSolution(sol);
+        setHasSolution(true);
+      } 
+      else {
+        setSolution({ id: '', title: '' });
+        setClickedChoice(choice);
+        setHasSolution(false);
+      }
+    
+      // if the question title is not empty, save the current choices, question, and clicked choice
+      // in the previous selected content
+      if (question.title !== '' && !hasSol) {
+        console.log("hiii")
+        prevSelectedContent.current.push({
+          question: currQuestion,
+          prevChoice: clickedChoice,
+          choiceList: currChoices,
+        });
+        // set the new choices and question
+        setCurrChoices(choicesList);
+        setCurrQuestion(question);
+      }
+    
+      // if the selected choice is Communication, set the page title to Communication
+      if (choice.title === 'Communication') {
+        pageTitle.current = 'Communication';
+        image.current = '/titleImgCommunication.png';
+      }
+    } catch (error) {
+      console.error(error);
+      // handle error here, for example by setting an error message state
     }
   }, [clickedChoice, currChoices, currQuestion]);
   
@@ -90,7 +94,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
   // run effect only once when component mounts
   useEffect(() => {
     if (clickedChoice !== null) {
-      updateChoicesAndQuestions(clickedChoice);
+      updateChoicesAndQuestions(clickedChoice).catch(error => console.error(error));;
     }
   }, []);
 
