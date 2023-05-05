@@ -356,7 +356,7 @@ To understand the API and pages, naviagte to the the Pages&APIDocs.md file in sr
 
 - When the page load is slow, it does not show a loading icon
 
-This is the back button
+More details can be found in issues section.
 
 ### Summary of we did
 Branch: main: <br>
