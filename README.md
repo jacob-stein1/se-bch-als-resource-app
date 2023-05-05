@@ -17,6 +17,7 @@ npm run dev
 
 Strapi: <br>
 nagivate to \backend_strapi to run strapi locally <br>
+create a .env  for keys file. Contact me or spark for the file's details. <br>
 ```bash
 npm install
 npm run develop
