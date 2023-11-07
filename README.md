@@ -373,7 +373,7 @@ We deployed the frontend in vercel. The link the test can be found in the side o
 https://se-bch-als-resource-app.vercel.app/
 
 In addition, we deployed strapi on railway
-Link: https://se-bch-als-resource-app-production.up.railway.app
+Link: [https://se-bch-als-resource-app-production.up.railway.app](https://se-bch-als-resource-app-production.up.railway.app/)
 
 You can contact me t merna.alghannam@gmail.com for access to strapi. 
 
