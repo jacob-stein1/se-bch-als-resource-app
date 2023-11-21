@@ -1,5 +1,4 @@
 require('dotenv').config();
-
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
@@ -22,8 +21,8 @@ async function importData(data, endpoint) {
     }
 
     for (const item of data) {
-      const payload = { data: item }; // Wrapping the item in a data object
-      await axios.post(`${STRAPI_URL}${endpoint}`, payload); // Removed the token header
+      const payload = { data: item };
+      await axios.put(`${STRAPI_URL}${endpoint}`, payload);
       console.log(`Imported to ${endpoint}: ${JSON.stringify(item)}`);
     }
     console.log(`Data import to ${endpoint} completed.`);
@@ -32,23 +31,23 @@ async function importData(data, endpoint) {
   }
 }
 
-
-
 // Execute the script
 async function runImport() {
-  const fileToEndpointMap = {
-    'choice-to-question-map.json': '/api/choice-to-question-maps',
-    'question-to-choice-map.json': '/api/question-to-choice-maps',
-    'solutions.json': '/api/solutions',
-  };
-
-  for (const [filename, endpoint] of Object.entries(fileToEndpointMap)) {
-    const filePath = path.join(DIRECTORY_PATH, filename);
-    if (fs.existsSync(filePath)) {
-      const data = readJsonFile(filePath);
-      await importData(data, endpoint);  // Removed the token parameter
+  fs.readdir(DIRECTORY_PATH, (err, files) => {
+    if (err) {
+      console.error('Error reading directory:', err);
+      return;
     }
-  }
+
+    files.forEach(file => {
+      if (path.extname(file) === '.json') {
+        const endpoint = `/api/${path.basename(file, '.json')}`;
+        const filePath = path.join(DIRECTORY_PATH, file);
+        const data = readJsonFile(filePath);
+        importData(data, endpoint);
+      }
+    });
+  });
 }
 
 runImport();

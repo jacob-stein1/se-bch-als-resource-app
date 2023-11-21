@@ -6,6 +6,7 @@ import searchQuestionsChoicesFromJson from '../utils/TempGetNextQuestion';
 import { bodyContentUseStyles } from '../components/MainBody/HelperFunctions/BodyContentStyle';
 import ToggleButton from '../components/MainBody/TogglebButton';
 import SolutionPages from '../utils/SolutionContent';
+import BookmarkButton from '../components/Bookmark/BookmarkButton';
 
 interface Props {}
 
@@ -146,13 +147,13 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
   return (
     <div>
       <Title hasPrev={(prevSelectedContent.current.length > 1)} prevQuestion={prevQuestion} titleImg={image.current} title={pageTitle.current} />
+  
       {!hasSolution ? (
         <Stack
           spacing="xl"
           className={classes.outer}
           sx={(theme) => ({
-            backgroundColor:
-              theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
+            backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
           })}
         >
           <Text className={classes.text}> {currQuestion.title} </Text>
@@ -164,10 +165,13 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
           ))}
         </Stack>
       ) : (
-        <SolutionPages solution={solution} hasSolution={hasSolution}/>
+        <SolutionPages solution={solution} hasSolution={hasSolution} />
       )}
+  
+      {/* Place the BookmarkButton here */}
+      <BookmarkButton pageTitle={solution.title} />
     </div>
-  );
+  );  
 };
 
 export default QuestionaireBodyContent
