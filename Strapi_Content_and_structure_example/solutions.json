@@ -15,7 +15,7 @@
       "attributes": {
         "Title": "Voice Amplification Solution",
         "createdAt": "2023-11-16T03:55:30.320Z",
-        "updatedAt": "2023-11-16T03:56:35.136Z",
+        "updatedAt": "2023-11-21T20:31:29.300Z",
         "publishedAt": "2023-11-16T03:55:32.617Z",
         "SolutionDescription": null
       }
@@ -55,7 +55,7 @@
       "attributes": {
         "Title": "Customized Tabbed Communication Booklet Solution",
         "createdAt": "2023-11-17T14:26:09.044Z",
-        "updatedAt": "2023-11-17T14:26:10.192Z",
+        "updatedAt": "2023-11-21T20:34:51.938Z",
         "publishedAt": "2023-11-17T14:26:10.164Z",
         "SolutionDescription": "Customized Tabbed Communication Booklet Solution description"
       }
@@ -65,7 +65,7 @@
       "attributes": {
         "Title": "I have a hard time holding a pen",
         "createdAt": "2023-11-17T14:28:25.021Z",
-        "updatedAt": "2023-11-17T16:27:22.309Z",
+        "updatedAt": "2023-11-21T20:35:14.598Z",
         "publishedAt": "2023-11-17T14:28:25.847Z",
         "SolutionDescription": "I have a hard time holding a pen  solution Description"
       }
@@ -89,6 +89,146 @@
         "publishedAt": "2023-11-17T14:30:23.499Z",
         "SolutionDescription": "Partner Assisted Scanning Description"
       }
+    },
+    {
+      "id": 11,
+      "attributes": {
+        "Title": "Model Talker",
+        "createdAt": "2023-11-18T01:58:27.082Z",
+        "updatedAt": "2023-11-21T21:54:11.442Z",
+        "publishedAt": "2023-11-18T01:58:27.077Z",
+        "SolutionDescription": null
+      }
+    },
+    {
+      "id": 12,
+      "attributes": {
+        "Title": "Acapela",
+        "createdAt": "2023-11-20T00:39:38.372Z",
+        "updatedAt": "2023-11-21T21:54:33.522Z",
+        "publishedAt": "2023-11-20T00:39:38.366Z",
+        "SolutionDescription": null
+      }
+    },
+    {
+      "id": 13,
+      "attributes": {
+        "Title": "Double Dipping",
+        "createdAt": "2023-11-21T21:51:40.885Z",
+        "updatedAt": "2023-11-21T21:53:33.439Z",
+        "publishedAt": "2023-11-21T21:51:42.389Z",
+        "SolutionDescription": null
+      }
+    },
+    {
+      "id": 14,
+      "attributes": {
+        "Title": "Voice Keeper",
+        "createdAt": "2023-11-21T21:55:02.332Z",
+        "updatedAt": "2023-11-21T21:55:03.113Z",
+        "publishedAt": "2023-11-21T21:55:03.110Z",
+        "SolutionDescription": null
+      }
+    },
+    {
+      "id": 15,
+      "attributes": {
+        "Title": "Speak Unique",
+        "createdAt": "2023-11-21T21:55:23.560Z",
+        "updatedAt": "2023-11-21T21:55:24.648Z",
+        "publishedAt": "2023-11-21T21:55:24.644Z",
+        "SolutionDescription": null
+      }
+    },
+    {
+      "id": 16,
+      "attributes": {
+        "Title": "Cerepoc",
+        "createdAt": "2023-11-21T21:55:39.883Z",
+        "updatedAt": "2023-11-21T21:55:40.623Z",
+        "publishedAt": "2023-11-21T21:55:40.619Z",
+        "SolutionDescription": null
+      }
+    },
+    {
+      "id": 17,
+      "attributes": {
+        "Title": "Integration of controls with my GSD",
+        "createdAt": "2023-11-21T23:03:54.791Z",
+        "updatedAt": "2023-11-21T23:03:55.960Z",
+        "publishedAt": "2023-11-21T23:03:55.958Z",
+        "SolutionDescription": null
+      }
+    },
+    {
+      "id": 18,
+      "attributes": {
+        "Title": "I am able to easily use my hands",
+        "createdAt": "2023-11-21T23:08:49.608Z",
+        "updatedAt": "2023-11-21T23:09:04.554Z",
+        "publishedAt": "2023-11-21T23:09:04.552Z",
+        "SolutionDescription": null
+      }
+    },
+    {
+      "id": 19,
+      "attributes": {
+        "Title": "I sometimes have difficulty with my hands",
+        "createdAt": "2023-11-21T23:09:30.259Z",
+        "updatedAt": "2023-11-21T23:09:31.157Z",
+        "publishedAt": "2023-11-21T23:09:31.149Z",
+        "SolutionDescription": null
+      }
+    },
+    {
+      "id": 20,
+      "attributes": {
+        "Title": "I cannot use my hands",
+        "createdAt": "2023-11-21T23:09:56.363Z",
+        "updatedAt": "2023-11-21T23:09:57.318Z",
+        "publishedAt": "2023-11-21T23:09:57.315Z",
+        "SolutionDescription": null
+      }
+    },
+    {
+      "id": 21,
+      "attributes": {
+        "Title": "Pacing your speech",
+        "createdAt": "2023-11-21T23:57:26.393Z",
+        "updatedAt": "2023-11-21T23:57:27.499Z",
+        "publishedAt": "2023-11-21T23:57:27.492Z",
+        "SolutionDescription": null
+      }
+    },
+    {
+      "id": 22,
+      "attributes": {
+        "Title": "Producing fewer words per breath",
+        "createdAt": "2023-11-21T23:58:30.344Z",
+        "updatedAt": "2023-11-21T23:59:11.731Z",
+        "publishedAt": "2023-11-21T23:58:31.783Z",
+        "SolutionDescription": null
+      }
+    },
+    {
+      "id": 23,
+      "attributes": {
+        "Title": "Over-articulating some sounds",
+        "createdAt": "2023-11-21T23:59:32.683Z",
+        "updatedAt": "2023-11-21T23:59:43.219Z",
+        "publishedAt": "2023-11-21T23:59:43.218Z",
+        "SolutionDescription": null
+      }
+    },
+    {
+      "id": 24,
+      "attributes": {
+        "Title": "Quick access tools",
+        "createdAt": "2023-11-22T00:09:31.654Z",
+        "updatedAt": "2023-11-22T00:09:32.908Z",
+        "publishedAt": "2023-11-22T00:09:32.905Z",
+        "SolutionDescription": null
+      }
     }
   ],
   "meta": {
@@ -96,7 +236,7 @@
       "page": 1,
       "pageSize": 25,
       "pageCount": 1,
-      "total": 9
+      "total": 23
     }
   }
 }

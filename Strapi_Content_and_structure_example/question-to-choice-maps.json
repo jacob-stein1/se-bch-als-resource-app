@@ -15,7 +15,7 @@
       "attributes": {
         "QuestionName": "Proactive voice preservation",
         "createdAt": "2023-11-16T02:07:15.253Z",
-        "updatedAt": "2023-11-16T02:07:17.120Z",
+        "updatedAt": "2023-11-21T21:47:15.810Z",
         "publishedAt": "2023-11-16T02:07:17.116Z",
         "QuestionDescription": null
       }
@@ -45,7 +45,7 @@
       "attributes": {
         "QuestionName": "Speech Clarity ",
         "createdAt": "2023-11-16T02:20:48.890Z",
-        "updatedAt": "2023-11-16T02:46:51.174Z",
+        "updatedAt": "2023-11-21T23:53:40.738Z",
         "publishedAt": "2023-11-16T02:46:51.168Z",
         "QuestionDescription": "Consider talking with your speech-language pathologist or physician about the use of the following strategies:"
       }
@@ -75,7 +75,7 @@
       "attributes": {
         "QuestionName": "Breath Support for Speaking",
         "createdAt": "2023-11-16T03:59:53.541Z",
-        "updatedAt": "2023-11-16T03:59:54.672Z",
+        "updatedAt": "2023-11-21T23:55:57.236Z",
         "publishedAt": "2023-11-16T03:59:54.663Z",
         "QuestionDescription": null
       }
@@ -95,7 +95,7 @@
       "attributes": {
         "QuestionName": "Quick ACCESS Strategies",
         "createdAt": "2023-11-16T04:04:30.510Z",
-        "updatedAt": "2023-11-16T04:04:33.493Z",
+        "updatedAt": "2023-11-21T23:00:45.141Z",
         "publishedAt": "2023-11-16T04:04:33.481Z",
         "QuestionDescription": null
       }
@@ -129,6 +129,26 @@
         "publishedAt": "2023-11-17T16:48:41.495Z",
         "QuestionDescription": null
       }
+    },
+    {
+      "id": 17,
+      "attributes": {
+        "QuestionName": "Table/Smart Phone Based App",
+        "createdAt": "2023-11-20T00:39:38.346Z",
+        "updatedAt": "2023-11-21T23:07:14.925Z",
+        "publishedAt": "2023-11-20T00:39:38.343Z",
+        "QuestionDescription": null
+      }
+    },
+    {
+      "id": 18,
+      "attributes": {
+        "QuestionName": "Voice Banking",
+        "createdAt": "2023-11-21T21:49:12.272Z",
+        "updatedAt": "2023-11-21T21:51:12.788Z",
+        "publishedAt": "2023-11-21T21:49:14.144Z",
+        "QuestionDescription": null
+      }
     }
   ],
   "meta": {
@@ -136,7 +156,7 @@
       "page": 1,
       "pageSize": 25,
       "pageCount": 1,
-      "total": 13
+      "total": 15
     }
   }
 }
