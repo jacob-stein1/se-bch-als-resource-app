@@ -7,6 +7,7 @@ import { bodyContentUseStyles } from '../components/MainBody/HelperFunctions/Bod
 import ToggleButton from '../components/MainBody/TogglebButton';
 import SolutionPages from '../utils/SolutionContent';
 import BookmarkButton from '../components/Bookmark/BookmarkButton';
+import axios from 'axios';
 
 interface Props {}
 
@@ -31,6 +32,9 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
 
   // solution state
   const [solution, setSolution] = useState<ISolution>({ id: '', title: '' });
+
+  //set User ID
+  const [userId, setUserId] = useState(null);
 
   // whether solution has been found
   const [hasSolution, setHasSolution] = useState(false);
@@ -114,6 +118,22 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
     }
   }, []);
 
+  // useEffect for fetching user ID
+  useEffect(() => {
+    const fetchUserId = async () => {
+      try {
+        const response = await axios.get('http://localhost:1338/api/users');
+        // Assuming you want to use the first user in the list
+        const firstUser = response.data[0];
+        setUserId(firstUser.id);
+      } catch (error) {
+        console.error('Error fetching user ID:', error);
+      }
+    };
+
+    fetchUserId();
+  }, []);
+
   /**
    * Goes to the previous selected question and choices, and updates the current state with previous state
    *///the way we fetch fprevious question was fixed during dev by using reroute
@@ -146,7 +166,12 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
 
   return (
     <div>
-      <Title hasPrev={(prevSelectedContent.current.length > 1)} prevQuestion={prevQuestion} titleImg={image.current} title={pageTitle.current} />
+      <Title 
+        hasPrev={(prevSelectedContent.current.length > 1)} 
+        prevQuestion={prevQuestion} 
+        titleImg={image.current} 
+        title={pageTitle.current} 
+      />
   
       {!hasSolution ? (
         <Stack
@@ -160,7 +185,11 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
           <Text className={classes.descriptionText}> {currQuestion.description} </Text>
           {currChoices.map((choice) => (
             <div key={choice.id}>
-              <ToggleButton updateContent={() => updateChoicesAndQuestions(choice)} className={classes.inner} choice={choice} />
+              <ToggleButton 
+                updateContent={() => updateChoicesAndQuestions(choice)} 
+                className={classes.inner} 
+                choice={choice} 
+              />
             </div>
           ))}
         </Stack>
@@ -168,10 +197,18 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
         <SolutionPages solution={solution} hasSolution={hasSolution} />
       )}
   
-      {/* Place the BookmarkButton here */}
-      <BookmarkButton pageTitle={solution.title} />
+      {/* Conditional rendering for BookmarkButton */}
+      {hasSolution && (
+        <BookmarkButton 
+          pageTitle={solution.title} 
+          pageIdentifier={solution.id} // Assuming solution.id is your unique page identifier
+          userId={userId} // Replace this with actual logic to obtain the userId
+          isSolutionPage={hasSolution}
+        />
+      )}
     </div>
-  );  
+  );
+  
 };
 
 export default QuestionaireBodyContent

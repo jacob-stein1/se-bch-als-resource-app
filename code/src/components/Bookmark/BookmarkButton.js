@@ -1,47 +1,73 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Button, Stack, Text } from '@mantine/core';
+import { bodyContentUseStyles } from '../MainBody/HelperFunctions/BodyContentStyle'; // Update the path as necessary
 
-const BookmarkButton = ({ pageTitle }) => {
-  const [userId, setUserId] = useState(null);
-
-  useEffect(() => {
-    const fetchUserId = async () => {
-      try {
-        const response = await axios.get('http://localhost:1338/api/users');
-        // Assuming you want to use the first user in the list
-        const firstUser = response.data[0];
-        setUserId(firstUser.id);
-      } catch (error) {
-        console.error('Error fetching user ID:', error);
-      }
-    };
-
-    fetchUserId();
-  }, []);
+const BookmarkButton = ({ pageTitle, pageIdentifier, userId, isSolutionPage }) => {
+  const { classes } = bodyContentUseStyles();
+  const [showBookmarkQuestion, setShowBookmarkQuestion] = useState(false);
 
   const handleBookmark = async () => {
     if (!userId) {
       console.error('User ID not available');
       return;
     }
-
+  
+    const bookmarkData = {
+      title: pageTitle,
+      identifier: pageIdentifier,
+      users_permissions_user: userId
+    };
+  
+    console.log('Sending bookmark data:', bookmarkData); // Log the data being sent
+  
     try {
       const response = await axios.post('http://localhost:1338/api/bookmarks', {
-        data: {
-          title: pageTitle,
-          user: userId, // Update this to match your Strapi model field for user relation
-        },
+        data: bookmarkData,
       });
       console.log('Bookmark saved:', response.data);
     } catch (error) {
       console.error('Error saving bookmark:', error);
     }
   };
+  
+
+  if (!isSolutionPage) {
+    return null;
+  }
 
   return (
-    <button onClick={handleBookmark} disabled={!userId}>
-      Bookmark this page
-    </button>
+    <div className={classes.outer}>
+      {showBookmarkQuestion ? (
+        <Stack spacing="xl">
+          <Text className={classes.text}>Do you want to save this to your account?</Text>
+          <Stack direction="row" spacing="md">
+            <Button 
+              className={classes.inner} 
+              onClick={handleBookmark}
+              variant="outline"
+              style={{ backgroundColor: '#FFFFFF', color: '#254885' }}>
+              Yes
+            </Button>
+            <Button 
+              className={classes.inner} 
+              onClick={() => setShowBookmarkQuestion(false)}
+              variant="outline"
+              style={{ backgroundColor: '#FFFFFF', color: '#254885' }}>
+              No
+            </Button>
+          </Stack>
+        </Stack>
+      ) : (
+        <Button 
+          className={classes.inner} 
+          onClick={() => setShowBookmarkQuestion(true)}
+          variant="outline"
+          style={{ backgroundColor: '#FFFFFF', color: '#254885' }}>
+          Bookmark this page
+        </Button>
+      )}
+    </div>
   );
 };
 

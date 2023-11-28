@@ -13,7 +13,8 @@ const collectionTypes = [
   'question-to-choice-maps',
   'solutions',
   'tree-levels',
-  'users'
+  'users',
+  'bookmarks'
 ];
 
 async function fetchData(endpoint) {

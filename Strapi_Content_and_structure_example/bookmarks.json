@@ -1,0 +1,42 @@
+{
+  "data": [
+    {
+      "id": 14,
+      "attributes": {
+        "Title": null,
+        "identifier": 2,
+        "createdAt": "2023-11-28T06:18:09.478Z",
+        "updatedAt": "2023-11-28T06:18:09.478Z",
+        "publishedAt": "2023-11-28T06:18:09.462Z"
+      }
+    },
+    {
+      "id": 15,
+      "attributes": {
+        "Title": null,
+        "identifier": 2,
+        "createdAt": "2023-11-28T06:19:48.601Z",
+        "updatedAt": "2023-11-28T06:19:48.601Z",
+        "publishedAt": "2023-11-28T06:19:48.585Z"
+      }
+    },
+    {
+      "id": 16,
+      "attributes": {
+        "Title": null,
+        "identifier": 2,
+        "createdAt": "2023-11-28T06:21:58.132Z",
+        "updatedAt": "2023-11-28T06:21:58.132Z",
+        "publishedAt": "2023-11-28T06:21:58.126Z"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 3
+    }
+  }
+}
