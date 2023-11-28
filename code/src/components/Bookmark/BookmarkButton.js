@@ -14,7 +14,7 @@ const BookmarkButton = ({ pageTitle, pageIdentifier, userId, isSolutionPage }) =
     }
   
     const bookmarkData = {
-      title: pageTitle,
+      Title: pageTitle,
       identifier: pageIdentifier,
       users_permissions_user: userId
     };
