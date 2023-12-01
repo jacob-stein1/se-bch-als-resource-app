@@ -2,33 +2,22 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
-//const API_URL = 'http://localhost:1338'; 
-const API_URL = 'http://127.0.0.1:1338'; 
+const API_URL = 'http://127.0.0.1:1338';
 const dataDirectory = './Strapi_Content_and_structure_example';
 
-// Collection types to fetch
 const collectionTypes = [
-  'choice-to-question-maps',
-  'first-entries',
-  'question-to-choice-maps',
-  'solutions',
-  'tree-levels',
-  'users',
-  'bookmarks'
+  { name: 'choice-to-question-maps', totalEntries: 89 },
+  { name: 'first-entries', totalEntries: 5 }, // Example total entries
+  { name: 'question-to-choice-maps', totalEntries: 50 },
+  { name: 'solutions', totalEntries: 50 },
+  { name: 'tree-levels', totalEntries: 5 },
+  { name: 'bookmarks', totalEntries: 10 }
 ];
 
-async function fetchData(endpoint) {
-    try {
-        console.log(`Requesting: ${API_URL}/api/${endpoint}`);
-        const response = await axios.get(`${API_URL}/api/${endpoint}`);
-        return response.data;
-    } catch (error) {
-        console.error(`Error fetching data from ${endpoint}:`, error);
-        return null;
-    }
+// Ensure the directory exists
+if (!fs.existsSync(dataDirectory)) {
+  fs.mkdirSync(dataDirectory, { recursive: true });
 }
-  
-
 
 function saveDataToFile(data, filename) {
   fs.writeFile(path.join(dataDirectory, `${filename}.json`), JSON.stringify(data, null, 2), (err) => {
@@ -40,15 +29,28 @@ function saveDataToFile(data, filename) {
   });
 }
 
-// Ensure the directory exists
-if (!fs.existsSync(dataDirectory)){
-  fs.mkdirSync(dataDirectory, { recursive: true });
+async function fetchAndSaveAllEntries(collection) {
+  const allEntries = [];
+
+  for (let id = 1; id <= collection.totalEntries; id++) {
+    try {
+      const response = await axios.get(`${API_URL}/api/${collection.name}/${id}`);
+
+      if (response.status === 200) {
+        const data = response.data;
+        allEntries.push(data);
+      } else {
+        console.warn(`Unexpected status code ${response.status} for entry ID ${id} in ${collection.name}. Skipping...`);
+      }
+    } catch (error) {
+      console.warn(`Error fetching entry with ID ${id} in ${collection.name}: ${error.message}. Skipping...`);
+    }
+  }
+
+  saveDataToFile(allEntries, collection.name);
 }
 
 // Fetch and save data for each collection type
-collectionTypes.forEach(type => {
-  fetchData(type)
-    .then(data => {
-      if (data) saveDataToFile(data, type);
-    });
+collectionTypes.forEach(collection => {
+  fetchAndSaveAllEntries(collection);
 });

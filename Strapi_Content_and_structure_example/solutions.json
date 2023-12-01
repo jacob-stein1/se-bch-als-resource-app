@@ -1,6 +1,6 @@
-{
-  "data": [
-    {
+[
+  {
+    "data": {
       "id": 1,
       "attributes": {
         "Title": "Messsage Banking Solution",
@@ -10,7 +10,10 @@
         "SolutionDescription": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 2,
       "attributes": {
         "Title": "Voice Amplification Solution",
@@ -20,7 +23,10 @@
         "SolutionDescription": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 4,
       "attributes": {
         "Title": "Voice Banking Solution",
@@ -30,7 +36,10 @@
         "SolutionDescription": "Voice banking solution"
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 5,
       "attributes": {
         "Title": "Letter Cueing Solution",
@@ -40,7 +49,10 @@
         "SolutionDescription": "Letter Cueing Solution Description"
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 6,
       "attributes": {
         "Title": "Topic Cueing Solution",
@@ -50,7 +62,10 @@
         "SolutionDescription": "Topic Cueing Solution Description"
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 7,
       "attributes": {
         "Title": "Customized Tabbed Communication Booklet Solution",
@@ -60,7 +75,10 @@
         "SolutionDescription": "Customized Tabbed Communication Booklet Solution description"
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 8,
       "attributes": {
         "Title": "I have a hard time holding a pen",
@@ -70,7 +88,10 @@
         "SolutionDescription": "I have a hard time holding a pen  solution Description"
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 9,
       "attributes": {
         "Title": "I have no difficulty holding a pen",
@@ -80,7 +101,10 @@
         "SolutionDescription": "I have no difficulty holding a pen description"
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 10,
       "attributes": {
         "Title": "Partner Assisted Scanning",
@@ -90,7 +114,10 @@
         "SolutionDescription": "Partner Assisted Scanning Description"
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 11,
       "attributes": {
         "Title": "Model Talker",
@@ -100,7 +127,10 @@
         "SolutionDescription": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 12,
       "attributes": {
         "Title": "Acapela",
@@ -110,7 +140,10 @@
         "SolutionDescription": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 13,
       "attributes": {
         "Title": "Double Dipping",
@@ -120,7 +153,10 @@
         "SolutionDescription": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 14,
       "attributes": {
         "Title": "Voice Keeper",
@@ -130,7 +166,10 @@
         "SolutionDescription": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 15,
       "attributes": {
         "Title": "Speak Unique",
@@ -140,7 +179,10 @@
         "SolutionDescription": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 16,
       "attributes": {
         "Title": "Cerepoc",
@@ -150,7 +192,10 @@
         "SolutionDescription": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 17,
       "attributes": {
         "Title": "Integration of controls with my GSD",
@@ -160,7 +205,10 @@
         "SolutionDescription": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 18,
       "attributes": {
         "Title": "I am able to easily use my hands",
@@ -170,7 +218,10 @@
         "SolutionDescription": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 19,
       "attributes": {
         "Title": "I sometimes have difficulty with my hands",
@@ -180,7 +231,10 @@
         "SolutionDescription": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 20,
       "attributes": {
         "Title": "I cannot use my hands",
@@ -190,7 +244,10 @@
         "SolutionDescription": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 21,
       "attributes": {
         "Title": "Pacing your speech",
@@ -200,7 +257,10 @@
         "SolutionDescription": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 22,
       "attributes": {
         "Title": "Producing fewer words per breath",
@@ -210,7 +270,10 @@
         "SolutionDescription": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 23,
       "attributes": {
         "Title": "Over-articulating some sounds",
@@ -220,7 +283,10 @@
         "SolutionDescription": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 24,
       "attributes": {
         "Title": "Quick access tools",
@@ -229,14 +295,241 @@
         "publishedAt": "2023-11-22T00:09:32.905Z",
         "SolutionDescription": null
       }
-    }
-  ],
-  "meta": {
-    "pagination": {
-      "page": 1,
-      "pageSize": 25,
-      "pageCount": 1,
-      "total": 23
-    }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 25,
+      "attributes": {
+        "Title": "Navigation Controls",
+        "createdAt": "2023-12-01T02:29:44.880Z",
+        "updatedAt": "2023-12-01T02:29:47.019Z",
+        "publishedAt": "2023-12-01T02:29:47.016Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 26,
+      "attributes": {
+        "Title": "Command Action Button",
+        "createdAt": "2023-12-01T02:30:14.440Z",
+        "updatedAt": "2023-12-01T02:30:15.146Z",
+        "publishedAt": "2023-12-01T02:30:15.142Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 27,
+      "attributes": {
+        "Title": "Virtual Home Button",
+        "createdAt": "2023-12-01T02:35:19.781Z",
+        "updatedAt": "2023-12-01T02:35:20.664Z",
+        "publishedAt": "2023-12-01T02:35:20.661Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 28,
+      "attributes": {
+        "Title": "Customizable Shortcuts",
+        "createdAt": "2023-12-01T02:35:59.431Z",
+        "updatedAt": "2023-12-01T02:36:00.103Z",
+        "publishedAt": "2023-12-01T02:36:00.101Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 29,
+      "attributes": {
+        "Title": "Swiping Gestures",
+        "createdAt": "2023-12-01T02:41:10.320Z",
+        "updatedAt": "2023-12-01T02:41:11.181Z",
+        "publishedAt": "2023-12-01T02:41:11.178Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 30,
+      "attributes": {
+        "Title": "Word Prediction",
+        "createdAt": "2023-12-01T02:43:04.731Z",
+        "updatedAt": "2023-12-01T02:43:05.494Z",
+        "publishedAt": "2023-12-01T02:43:05.491Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 31,
+      "attributes": {
+        "Title": "Auto Complete",
+        "createdAt": "2023-12-01T02:43:17.244Z",
+        "updatedAt": "2023-12-01T02:43:17.968Z",
+        "publishedAt": "2023-12-01T02:43:17.965Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 32,
+      "attributes": {
+        "Title": "Direct message and commands",
+        "createdAt": "2023-12-01T02:45:35.126Z",
+        "updatedAt": "2023-12-01T02:45:35.797Z",
+        "publishedAt": "2023-12-01T02:45:35.795Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 33,
+      "attributes": {
+        "Title": "Stylus",
+        "createdAt": "2023-12-01T02:52:14.066Z",
+        "updatedAt": "2023-12-01T02:55:03.064Z",
+        "publishedAt": "2023-12-01T02:52:14.814Z",
+        "SolutionDescription": "- Pencil with stylus - \nFlexible Curves with stylus - Finger Stylus\n"
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 34,
+      "attributes": {
+        "Title": "External switch for mouse click",
+        "createdAt": "2023-12-01T03:01:42.143Z",
+        "updatedAt": "2023-12-01T03:02:22.677Z",
+        "publishedAt": "2023-12-01T03:01:42.787Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 35,
+      "attributes": {
+        "Title": "Dwell click activation",
+        "createdAt": "2023-12-01T03:01:54.300Z",
+        "updatedAt": "2023-12-01T03:02:02.948Z",
+        "publishedAt": "2023-12-01T03:01:55.083Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 36,
+      "attributes": {
+        "Title": "Different configuration of click buttons",
+        "createdAt": "2023-12-01T03:02:49.792Z",
+        "updatedAt": "2023-12-01T03:02:50.391Z",
+        "publishedAt": "2023-12-01T03:02:50.389Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 37,
+      "attributes": {
+        "Title": "TrackPad",
+        "createdAt": "2023-12-01T03:03:28.101Z",
+        "updatedAt": "2023-12-01T03:03:39.943Z",
+        "publishedAt": "2023-12-01T03:03:28.710Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 38,
+      "attributes": {
+        "Title": "Voice Command",
+        "createdAt": "2023-12-01T03:05:40.685Z",
+        "updatedAt": "2023-12-01T03:07:22.499Z",
+        "publishedAt": "2023-12-01T03:05:41.497Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 39,
+      "attributes": {
+        "Title": "Speech recognition softare",
+        "createdAt": "2023-12-01T03:06:53.769Z",
+        "updatedAt": "2023-12-01T03:07:00.170Z",
+        "publishedAt": "2023-12-01T03:07:00.168Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 40,
+      "attributes": {
+        "Title": "Eye tracking and head tracking",
+        "createdAt": "2023-12-01T03:16:19.405Z",
+        "updatedAt": "2023-12-01T03:16:20.076Z",
+        "publishedAt": "2023-12-01T03:16:20.073Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 41,
+      "attributes": {
+        "Title": "Live Speech",
+        "createdAt": "2023-12-01T03:18:02.123Z",
+        "updatedAt": "2023-12-01T03:18:02.553Z",
+        "publishedAt": "2023-12-01T03:18:02.551Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 42,
+      "attributes": {
+        "Title": "Personal Voice",
+        "createdAt": "2023-12-01T03:18:24.111Z",
+        "updatedAt": "2023-12-01T03:18:25.000Z",
+        "publishedAt": "2023-12-01T03:18:24.996Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
   }
-}
+]

@@ -1,6 +1,6 @@
-{
-  "data": [
-    {
+[
+  {
+    "data": {
       "id": 2,
       "attributes": {
         "ChoiceName": "Communication",
@@ -10,7 +10,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 3,
       "attributes": {
         "ChoiceName": "computer access",
@@ -20,7 +23,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 4,
       "attributes": {
         "ChoiceName": "home access",
@@ -30,7 +36,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 5,
       "attributes": {
         "ChoiceName": "smart phone access",
@@ -40,7 +49,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 6,
       "attributes": {
         "ChoiceName": "No, but I want to proactive",
@@ -50,7 +62,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 7,
       "attributes": {
         "ChoiceName": "Very concerned",
@@ -60,7 +75,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 8,
       "attributes": {
         "ChoiceName": "Somewhat concerned",
@@ -70,7 +88,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 9,
       "attributes": {
         "ChoiceName": "No longer meets my comunication needs",
@@ -80,7 +101,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 10,
       "attributes": {
         "ChoiceName": "Message Banking",
@@ -90,7 +114,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 11,
       "attributes": {
         "ChoiceName": "Voice banking",
@@ -100,7 +127,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 12,
       "attributes": {
         "ChoiceName": "Double Dipping",
@@ -110,7 +140,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 13,
       "attributes": {
         "ChoiceName": "My speech clarity",
@@ -120,7 +153,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 14,
       "attributes": {
         "ChoiceName": "My volume",
@@ -130,7 +166,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 15,
       "attributes": {
         "ChoiceName": "The energy it takes to speak",
@@ -140,7 +179,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 16,
       "attributes": {
         "ChoiceName": "My breath support for speaking",
@@ -150,7 +192,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 17,
       "attributes": {
         "ChoiceName": "Voice preservation",
@@ -160,7 +205,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 18,
       "attributes": {
         "ChoiceName": "Pacing your speech",
@@ -170,7 +218,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 19,
       "attributes": {
         "ChoiceName": "Producing fewer words per breath",
@@ -180,7 +231,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 20,
       "attributes": {
         "ChoiceName": "Over-articulating some sounds",
@@ -190,7 +244,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 21,
       "attributes": {
         "ChoiceName": "Quick access tools",
@@ -200,7 +257,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 22,
       "attributes": {
         "ChoiceName": "Voice Amplification",
@@ -210,7 +270,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 24,
       "attributes": {
         "ChoiceName": "Learn about back-up communication tool",
@@ -220,7 +283,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 25,
       "attributes": {
         "ChoiceName": "Start voice preservation",
@@ -230,7 +296,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 26,
       "attributes": {
         "ChoiceName": "Quick ACCESS Strategies",
@@ -240,7 +309,10 @@
         "PlatformChoice": null
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 27,
       "attributes": {
         "ChoiceName": "High-Tech Strategies",
@@ -249,14 +321,787 @@
         "publishedAt": "2023-11-16T04:03:06.762Z",
         "PlatformChoice": null
       }
-    }
-  ],
-  "meta": {
-    "pagination": {
-      "page": 1,
-      "pageSize": 25,
-      "pageCount": 2,
-      "total": 50
-    }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 28,
+      "attributes": {
+        "ChoiceName": "Partner Training Strategies",
+        "createdAt": "2023-11-16T04:03:22.990Z",
+        "updatedAt": "2023-11-16T04:03:24.029Z",
+        "publishedAt": "2023-11-16T04:03:24.027Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 29,
+      "attributes": {
+        "ChoiceName": "Gaining Attention",
+        "createdAt": "2023-11-16T04:03:35.859Z",
+        "updatedAt": "2023-11-16T04:03:36.899Z",
+        "publishedAt": "2023-11-16T04:03:36.895Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 30,
+      "attributes": {
+        "ChoiceName": "Letter Cueing",
+        "createdAt": "2023-11-16T04:05:00.274Z",
+        "updatedAt": "2023-11-16T04:05:01.193Z",
+        "publishedAt": "2023-11-16T04:05:01.189Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 31,
+      "attributes": {
+        "ChoiceName": "Topic cueing",
+        "createdAt": "2023-11-16T04:05:15.329Z",
+        "updatedAt": "2023-11-16T04:05:16.212Z",
+        "publishedAt": "2023-11-16T04:05:16.210Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 32,
+      "attributes": {
+        "ChoiceName": "Customized tabbed communication booklet",
+        "createdAt": "2023-11-16T04:05:40.426Z",
+        "updatedAt": "2023-11-16T04:05:41.494Z",
+        "publishedAt": "2023-11-16T04:05:41.489Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 33,
+      "attributes": {
+        "ChoiceName": "Writing",
+        "createdAt": "2023-11-16T04:14:14.478Z",
+        "updatedAt": "2023-11-16T04:14:15.515Z",
+        "publishedAt": "2023-11-16T04:14:15.511Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 34,
+      "attributes": {
+        "ChoiceName": "Partner Assisted Scanning",
+        "createdAt": "2023-11-16T04:14:45.827Z",
+        "updatedAt": "2023-11-17T14:30:19.189Z",
+        "publishedAt": "2023-11-17T14:30:19.185Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 35,
+      "attributes": {
+        "ChoiceName": "Tablet/smart phone based apps",
+        "createdAt": "2023-11-16T04:39:05.682Z",
+        "updatedAt": "2023-11-17T16:39:44.482Z",
+        "publishedAt": "2023-11-16T04:39:06.566Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 36,
+      "attributes": {
+        "ChoiceName": "Speech generating device",
+        "createdAt": "2023-11-16T04:39:21.979Z",
+        "updatedAt": "2023-11-16T04:39:23.044Z",
+        "publishedAt": "2023-11-16T04:39:23.043Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 37,
+      "attributes": {
+        "ChoiceName": "Communication/Language softwares",
+        "createdAt": "2023-11-16T04:39:47.361Z",
+        "updatedAt": "2023-11-16T04:39:49.670Z",
+        "publishedAt": "2023-11-16T04:39:49.665Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 38,
+      "attributes": {
+        "ChoiceName": "Integration of controls with my GSD",
+        "createdAt": "2023-11-16T04:40:11.351Z",
+        "updatedAt": "2023-11-16T04:40:12.782Z",
+        "publishedAt": "2023-11-16T04:40:12.772Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 39,
+      "attributes": {
+        "ChoiceName": "I have a hard time holding a pen",
+        "createdAt": "2023-11-17T14:27:44.726Z",
+        "updatedAt": "2023-11-17T14:27:45.663Z",
+        "publishedAt": "2023-11-17T14:27:45.660Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 40,
+      "attributes": {
+        "ChoiceName": "I have  no difficulty holding a pen",
+        "createdAt": "2023-11-17T14:28:00.832Z",
+        "updatedAt": "2023-11-17T14:28:09.718Z",
+        "publishedAt": "2023-11-17T14:28:09.716Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 41,
+      "attributes": {
+        "ChoiceName": "Platform",
+        "createdAt": "2023-11-17T16:49:03.829Z",
+        "updatedAt": "2023-11-21T23:04:51.624Z",
+        "publishedAt": "2023-11-17T16:49:04.783Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 42,
+      "attributes": {
+        "ChoiceName": "I am able to easily use my hands",
+        "createdAt": "2023-11-20T00:39:38.312Z",
+        "updatedAt": "2023-11-21T23:07:38.642Z",
+        "publishedAt": "2023-11-20T00:39:38.303Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 43,
+      "attributes": {
+        "ChoiceName": "Model Talker",
+        "createdAt": "2023-11-21T21:49:31.470Z",
+        "updatedAt": "2023-11-21T21:49:32.356Z",
+        "publishedAt": "2023-11-21T21:49:32.350Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 44,
+      "attributes": {
+        "ChoiceName": "Acapela",
+        "createdAt": "2023-11-21T21:49:50.039Z",
+        "updatedAt": "2023-11-21T21:49:50.737Z",
+        "publishedAt": "2023-11-21T21:49:50.736Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 45,
+      "attributes": {
+        "ChoiceName": "Voice Keeper",
+        "createdAt": "2023-11-21T21:50:01.488Z",
+        "updatedAt": "2023-11-21T21:51:03.305Z",
+        "publishedAt": "2023-11-21T21:50:02.343Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 46,
+      "attributes": {
+        "ChoiceName": "Speak Unique",
+        "createdAt": "2023-11-21T21:50:16.036Z",
+        "updatedAt": "2023-11-21T21:50:17.848Z",
+        "publishedAt": "2023-11-21T21:50:17.847Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 47,
+      "attributes": {
+        "ChoiceName": "Cerepoc",
+        "createdAt": "2023-11-21T21:50:32.449Z",
+        "updatedAt": "2023-11-21T21:50:33.230Z",
+        "publishedAt": "2023-11-21T21:50:33.225Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 49,
+      "attributes": {
+        "ChoiceName": "Language",
+        "createdAt": "2023-11-21T23:05:06.391Z",
+        "updatedAt": "2023-11-21T23:05:07.523Z",
+        "publishedAt": "2023-11-21T23:05:07.517Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 50,
+      "attributes": {
+        "ChoiceName": "Accessibility",
+        "createdAt": "2023-11-21T23:05:17.376Z",
+        "updatedAt": "2023-11-21T23:05:18.642Z",
+        "publishedAt": "2023-11-21T23:05:18.639Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 51,
+      "attributes": {
+        "ChoiceName": "Confirm",
+        "createdAt": "2023-11-21T23:05:53.781Z",
+        "updatedAt": "2023-11-21T23:05:54.466Z",
+        "publishedAt": "2023-11-21T23:05:54.463Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 52,
+      "attributes": {
+        "ChoiceName": "I sometimes have diffculty with my hands",
+        "createdAt": "2023-11-21T23:07:58.373Z",
+        "updatedAt": "2023-11-21T23:07:59.403Z",
+        "publishedAt": "2023-11-21T23:07:59.401Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 53,
+      "attributes": {
+        "ChoiceName": "I cannot use my hands",
+        "createdAt": "2023-11-21T23:08:11.417Z",
+        "updatedAt": "2023-11-21T23:08:12.378Z",
+        "publishedAt": "2023-11-21T23:08:12.368Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 54,
+      "attributes": {
+        "ChoiceName": "Good use of two hands",
+        "createdAt": "2023-12-01T02:17:10.437Z",
+        "updatedAt": "2023-12-01T02:17:11.521Z",
+        "publishedAt": "2023-12-01T02:17:11.518Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 55,
+      "attributes": {
+        "ChoiceName": "Good use of one hand",
+        "createdAt": "2023-12-01T02:17:44.240Z",
+        "updatedAt": "2023-12-01T02:17:45.284Z",
+        "publishedAt": "2023-12-01T02:17:45.272Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 57,
+      "attributes": {
+        "ChoiceName": "Experience difficulties in verbal expression",
+        "createdAt": "2023-12-01T02:18:11.574Z",
+        "updatedAt": "2023-12-01T02:18:17.134Z",
+        "publishedAt": "2023-12-01T02:18:17.132Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 58,
+      "attributes": {
+        "ChoiceName": "Experience limited mobility in both hands",
+        "createdAt": "2023-12-01T02:18:48.788Z",
+        "updatedAt": "2023-12-01T02:18:54.235Z",
+        "publishedAt": "2023-12-01T02:18:54.233Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 59,
+      "attributes": {
+        "ChoiceName": "Comfortable to reach all area of screen",
+        "createdAt": "2023-12-01T02:20:31.928Z",
+        "updatedAt": "2023-12-01T02:20:32.804Z",
+        "publishedAt": "2023-12-01T02:20:32.801Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 60,
+      "attributes": {
+        "ChoiceName": "Difficult to reach some area of screen",
+        "createdAt": "2023-12-01T02:20:44.672Z",
+        "updatedAt": "2023-12-01T02:20:45.855Z",
+        "publishedAt": "2023-12-01T02:20:45.850Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 61,
+      "attributes": {
+        "ChoiceName": "Top of the screen",
+        "createdAt": "2023-12-01T02:26:11.538Z",
+        "updatedAt": "2023-12-01T02:26:12.742Z",
+        "publishedAt": "2023-12-01T02:26:12.739Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 62,
+      "attributes": {
+        "ChoiceName": "Bottom of the screen",
+        "createdAt": "2023-12-01T02:26:20.123Z",
+        "updatedAt": "2023-12-01T02:26:26.515Z",
+        "publishedAt": "2023-12-01T02:26:26.512Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 63,
+      "attributes": {
+        "ChoiceName": "Corners of the screen",
+        "createdAt": "2023-12-01T02:26:33.180Z",
+        "updatedAt": "2023-12-01T02:26:39.369Z",
+        "publishedAt": "2023-12-01T02:26:39.366Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 64,
+      "attributes": {
+        "ChoiceName": "Navigation controls: closer to the button of the screen",
+        "createdAt": "2023-12-01T02:27:45.245Z",
+        "updatedAt": "2023-12-01T02:27:46.316Z",
+        "publishedAt": "2023-12-01T02:27:46.310Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 65,
+      "attributes": {
+        "ChoiceName": "Command Action Button: Closer to the bottom of the screen",
+        "createdAt": "2023-12-01T02:28:08.178Z",
+        "updatedAt": "2023-12-01T02:28:09.327Z",
+        "publishedAt": "2023-12-01T02:28:09.324Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 66,
+      "attributes": {
+        "ChoiceName": "Virtual Home Button",
+        "createdAt": "2023-12-01T02:33:55.956Z",
+        "updatedAt": "2023-12-01T02:33:56.722Z",
+        "publishedAt": "2023-12-01T02:33:56.719Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 67,
+      "attributes": {
+        "ChoiceName": "Customizable Shortcuts",
+        "createdAt": "2023-12-01T02:34:10.244Z",
+        "updatedAt": "2023-12-01T02:34:11.044Z",
+        "publishedAt": "2023-12-01T02:34:11.041Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 68,
+      "attributes": {
+        "ChoiceName": "Comfortable reaching all area of screen",
+        "createdAt": "2023-12-01T02:38:02.441Z",
+        "updatedAt": "2023-12-01T02:38:03.627Z",
+        "publishedAt": "2023-12-01T02:38:03.625Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 69,
+      "attributes": {
+        "ChoiceName": "Difficult reaching some area of screen",
+        "createdAt": "2023-12-01T02:38:19.654Z",
+        "updatedAt": "2023-12-01T02:38:28.920Z",
+        "publishedAt": "2023-12-01T02:38:20.452Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 70,
+      "attributes": {
+        "ChoiceName": "Swiping on Screen",
+        "createdAt": "2023-12-01T02:39:15.004Z",
+        "updatedAt": "2023-12-01T02:39:15.872Z",
+        "publishedAt": "2023-12-01T02:39:15.870Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 71,
+      "attributes": {
+        "ChoiceName": "Typing on Screen",
+        "createdAt": "2023-12-01T02:39:30.265Z",
+        "updatedAt": "2023-12-01T02:39:31.686Z",
+        "publishedAt": "2023-12-01T02:39:31.684Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 72,
+      "attributes": {
+        "ChoiceName": "Voice Command",
+        "createdAt": "2023-12-01T02:39:40.803Z",
+        "updatedAt": "2023-12-01T02:39:42.382Z",
+        "publishedAt": "2023-12-01T02:39:42.378Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 73,
+      "attributes": {
+        "ChoiceName": "Swiping Gestures",
+        "createdAt": "2023-12-01T02:40:34.068Z",
+        "updatedAt": "2023-12-01T02:40:35.323Z",
+        "publishedAt": "2023-12-01T02:40:35.320Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 74,
+      "attributes": {
+        "ChoiceName": "Word Prediction",
+        "createdAt": "2023-12-01T02:41:48.570Z",
+        "updatedAt": "2023-12-01T02:41:49.291Z",
+        "publishedAt": "2023-12-01T02:41:49.288Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 75,
+      "attributes": {
+        "ChoiceName": "Auto Complete",
+        "createdAt": "2023-12-01T02:42:06.438Z",
+        "updatedAt": "2023-12-01T02:42:07.111Z",
+        "publishedAt": "2023-12-01T02:42:07.108Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 76,
+      "attributes": {
+        "ChoiceName": "Stylus",
+        "createdAt": "2023-12-01T02:42:19.783Z",
+        "updatedAt": "2023-12-01T02:42:20.472Z",
+        "publishedAt": "2023-12-01T02:42:20.471Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 77,
+      "attributes": {
+        "ChoiceName": "Voice Control and Direction",
+        "createdAt": "2023-12-01T02:44:45.693Z",
+        "updatedAt": "2023-12-01T03:12:18.259Z",
+        "publishedAt": "2023-12-01T02:44:46.360Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 78,
+      "attributes": {
+        "ChoiceName": "Adaptive device Options",
+        "createdAt": "2023-12-01T02:47:38.122Z",
+        "updatedAt": "2023-12-01T02:47:38.812Z",
+        "publishedAt": "2023-12-01T02:47:38.809Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 79,
+      "attributes": {
+        "ChoiceName": "Bluetooth Peripheral Support",
+        "createdAt": "2023-12-01T02:47:55.658Z",
+        "updatedAt": "2023-12-01T02:48:33.668Z",
+        "publishedAt": "2023-12-01T02:48:33.665Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 80,
+      "attributes": {
+        "ChoiceName": "Simplified Navigation",
+        "createdAt": "2023-12-01T02:48:14.734Z",
+        "updatedAt": "2023-12-01T02:48:15.556Z",
+        "publishedAt": "2023-12-01T02:48:15.548Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 81,
+      "attributes": {
+        "ChoiceName": "TrackPad",
+        "createdAt": "2023-12-01T02:56:28.873Z",
+        "updatedAt": "2023-12-01T02:56:29.731Z",
+        "publishedAt": "2023-12-01T02:56:29.729Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 82,
+      "attributes": {
+        "ChoiceName": "Mouse",
+        "createdAt": "2023-12-01T02:56:36.635Z",
+        "updatedAt": "2023-12-01T02:56:38.250Z",
+        "publishedAt": "2023-12-01T02:56:38.245Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 83,
+      "attributes": {
+        "ChoiceName": "Unable to depress the mouse click button",
+        "createdAt": "2023-12-01T02:58:23.399Z",
+        "updatedAt": "2023-12-01T03:01:23.327Z",
+        "publishedAt": "2023-12-01T02:58:31.577Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 84,
+      "attributes": {
+        "ChoiceName": "External switch for mouse click",
+        "createdAt": "2023-12-01T02:59:41.767Z",
+        "updatedAt": "2023-12-01T02:59:42.838Z",
+        "publishedAt": "2023-12-01T02:59:42.834Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 85,
+      "attributes": {
+        "ChoiceName": "Dwell click activation",
+        "createdAt": "2023-12-01T03:00:38.931Z",
+        "updatedAt": "2023-12-01T03:00:42.720Z",
+        "publishedAt": "2023-12-01T03:00:42.715Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 86,
+      "attributes": {
+        "ChoiceName": "Different configuration of click buttons",
+        "createdAt": "2023-12-01T03:00:55.644Z",
+        "updatedAt": "2023-12-01T03:01:03.623Z",
+        "publishedAt": "2023-12-01T03:01:03.622Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 87,
+      "attributes": {
+        "ChoiceName": "Implement voice commands",
+        "createdAt": "2023-12-01T03:05:00.994Z",
+        "updatedAt": "2023-12-01T03:05:02.023Z",
+        "publishedAt": "2023-12-01T03:05:02.021Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 88,
+      "attributes": {
+        "ChoiceName": "Speech recognition software",
+        "createdAt": "2023-12-01T03:06:12.242Z",
+        "updatedAt": "2023-12-01T03:06:14.653Z",
+        "publishedAt": "2023-12-01T03:06:14.644Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 89,
+      "attributes": {
+        "ChoiceName": "Direct messages and commands",
+        "createdAt": "2023-12-01T03:12:42.554Z",
+        "updatedAt": "2023-12-01T03:13:38.032Z",
+        "publishedAt": "2023-12-01T03:12:54.043Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
   }
-}
+]

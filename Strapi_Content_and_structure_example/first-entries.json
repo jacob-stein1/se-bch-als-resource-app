@@ -1,6 +1,6 @@
-{
-  "data": [
-    {
+[
+  {
+    "data": {
       "id": 1,
       "attributes": {
         "Title": "1",
@@ -9,7 +9,10 @@
         "publishedAt": "2023-11-16T01:19:04.337Z"
       }
     },
-    {
+    "meta": {}
+  },
+  {
+    "data": {
       "id": 2,
       "attributes": {
         "Title": null,
@@ -17,14 +20,7 @@
         "updatedAt": "2023-11-20T00:39:38.330Z",
         "publishedAt": "2023-11-20T00:39:38.330Z"
       }
-    }
-  ],
-  "meta": {
-    "pagination": {
-      "page": 1,
-      "pageSize": 25,
-      "pageCount": 1,
-      "total": 2
-    }
+    },
+    "meta": {}
   }
-}
+]

@@ -1,6 +1,6 @@
-{
-  "data": [
-    {
+[
+  {
+    "data": {
       "id": 1,
       "attributes": {
         "Level": null,
@@ -8,14 +8,7 @@
         "updatedAt": "2023-11-20T00:39:38.392Z",
         "publishedAt": "2023-11-20T00:39:38.390Z"
       }
-    }
-  ],
-  "meta": {
-    "pagination": {
-      "page": 1,
-      "pageSize": 25,
-      "pageCount": 1,
-      "total": 1
-    }
+    },
+    "meta": {}
   }
-}
+]
