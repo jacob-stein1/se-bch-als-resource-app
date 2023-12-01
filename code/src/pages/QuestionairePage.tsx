@@ -138,7 +138,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
    * Goes to the previous selected question and choices, and updates the current state with previous state
    *///the way we fetch fprevious question was fixed during dev by using reroute
   const prevQuestion = useCallback(() => {
-    if (prevSelectedContent.current.length > 1) {
+    if (prevSelectedContent.current.length > 0) { //updated from 1 to 0 so that it shows up right after first question
       const i = 1;
 
     // if current question has solution
@@ -167,7 +167,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
   return (
     <div>
       <Title 
-        hasPrev={(prevSelectedContent.current.length > 1)} 
+        hasPrev={(prevSelectedContent.current.length > 0)} //update from 1 to 0 so that backbutton shows up right after 1st page
         prevQuestion={prevQuestion} 
         titleImg={image.current} 
         title={pageTitle.current} 
