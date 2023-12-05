@@ -2,7 +2,7 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
-const API_URL = 'http://127.0.0.1:1338/api/choice-to-question-maps';
+const API_URL = 'your-ip-address/api/choice-to-question-maps';
 const dataDirectory = './Strapi_Content_and_structure_example';
 
 // Check if the directory exists, and create it if not

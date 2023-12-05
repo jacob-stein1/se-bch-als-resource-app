@@ -531,5 +531,278 @@
       }
     },
     "meta": {}
+  },
+  {
+    "data": {
+      "id": 43,
+      "attributes": {
+        "Title": "Trackball",
+        "createdAt": "2023-12-05T02:49:09.467Z",
+        "updatedAt": "2023-12-05T02:49:56.805Z",
+        "publishedAt": "2023-12-05T02:49:56.803Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 44,
+      "attributes": {
+        "Title": "Joystick",
+        "createdAt": "2023-12-05T02:53:53.561Z",
+        "updatedAt": "2023-12-05T02:54:56.938Z",
+        "publishedAt": "2023-12-05T02:54:56.935Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 45,
+      "attributes": {
+        "Title": "Head Mouse",
+        "createdAt": "2023-12-05T02:59:54.991Z",
+        "updatedAt": "2023-12-05T02:59:55.909Z",
+        "publishedAt": "2023-12-05T02:59:55.907Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 46,
+      "attributes": {
+        "Title": "Re-position the mouse",
+        "createdAt": "2023-12-05T03:06:40.789Z",
+        "updatedAt": "2023-12-05T03:06:52.598Z",
+        "publishedAt": "2023-12-05T03:06:52.595Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 47,
+      "attributes": {
+        "Title": "Place the mouse on your lap",
+        "createdAt": "2023-12-05T03:07:15.822Z",
+        "updatedAt": "2023-12-05T03:07:17.265Z",
+        "publishedAt": "2023-12-05T03:07:17.262Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 48,
+      "attributes": {
+        "Title": "Use of arm supports",
+        "createdAt": "2023-12-05T03:11:28.021Z",
+        "updatedAt": "2023-12-05T03:11:29.289Z",
+        "publishedAt": "2023-12-05T03:11:29.281Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 49,
+      "attributes": {
+        "Title": "Place the mouse at the arm rest level",
+        "createdAt": "2023-12-05T03:12:02.520Z",
+        "updatedAt": "2023-12-05T03:12:03.977Z",
+        "publishedAt": "2023-12-05T03:12:03.973Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 50,
+      "attributes": {
+        "Title": "Other cursor control devices",
+        "createdAt": "2023-12-05T03:23:52.452Z",
+        "updatedAt": "2023-12-05T03:24:09.152Z",
+        "publishedAt": "2023-12-05T03:23:59.375Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 51,
+      "attributes": {
+        "Title": "Adjusting cursor settings",
+        "createdAt": "2023-12-05T03:34:12.035Z",
+        "updatedAt": "2023-12-05T03:34:13.136Z",
+        "publishedAt": "2023-12-05T03:34:13.132Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 52,
+      "attributes": {
+        "Title": "Trackball",
+        "createdAt": "2023-12-05T03:34:34.238Z",
+        "updatedAt": "2023-12-05T03:34:35.433Z",
+        "publishedAt": "2023-12-05T03:34:35.426Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 53,
+      "attributes": {
+        "Title": "Joystick",
+        "createdAt": "2023-12-05T03:38:24.387Z",
+        "updatedAt": "2023-12-05T03:38:25.720Z",
+        "publishedAt": "2023-12-05T03:38:25.706Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 54,
+      "attributes": {
+        "Title": "External touchpad",
+        "createdAt": "2023-12-05T03:38:33.674Z",
+        "updatedAt": "2023-12-05T03:38:53.030Z",
+        "publishedAt": "2023-12-05T03:38:53.024Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 55,
+      "attributes": {
+        "Title": "Place the keyboard at \"lap leve\" via keyboard tray, lap pillow, or your position",
+        "createdAt": "2023-12-05T03:50:34.435Z",
+        "updatedAt": "2023-12-05T03:50:46.592Z",
+        "publishedAt": "2023-12-05T03:50:46.590Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 56,
+      "attributes": {
+        "Title": "Use an external keyboard connected to laptop",
+        "createdAt": "2023-12-05T03:53:16.331Z",
+        "updatedAt": "2023-12-05T03:53:28.619Z",
+        "publishedAt": "2023-12-05T03:53:28.615Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 57,
+      "attributes": {
+        "Title": "Turn off the touchpad via computer settings and use an external cursor control",
+        "createdAt": "2023-12-05T03:53:51.107Z",
+        "updatedAt": "2023-12-05T03:54:06.806Z",
+        "publishedAt": "2023-12-05T03:54:06.801Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 58,
+      "attributes": {
+        "Title": "Filter keys",
+        "createdAt": "2023-12-05T03:56:55.870Z",
+        "updatedAt": "2023-12-05T03:57:09.898Z",
+        "publishedAt": "2023-12-05T03:57:09.896Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 59,
+      "attributes": {
+        "Title": "Stick keys",
+        "createdAt": "2023-12-05T03:57:21.008Z",
+        "updatedAt": "2023-12-05T03:57:51.879Z",
+        "publishedAt": "2023-12-05T03:57:34.178Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 60,
+      "attributes": {
+        "Title": "Slow typing speed",
+        "createdAt": "2023-12-05T04:11:46.297Z",
+        "updatedAt": "2023-12-05T04:11:47.250Z",
+        "publishedAt": "2023-12-05T04:11:47.240Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 61,
+      "attributes": {
+        "Title": "Look at keys while typing",
+        "createdAt": "2023-12-05T04:12:14.244Z",
+        "updatedAt": "2023-12-05T04:12:15.493Z",
+        "publishedAt": "2023-12-05T04:12:15.488Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 62,
+      "attributes": {
+        "Title": "Typing aid",
+        "createdAt": "2023-12-05T04:15:14.878Z",
+        "updatedAt": "2023-12-05T04:15:15.956Z",
+        "publishedAt": "2023-12-05T04:15:15.953Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 63,
+      "attributes": {
+        "Title": "Angle the keyboard toward your hand",
+        "createdAt": "2023-12-05T04:15:25.780Z",
+        "updatedAt": "2023-12-05T04:15:43.852Z",
+        "publishedAt": "2023-12-05T04:15:43.850Z",
+        "SolutionDescription": null
+      }
+    },
+    "meta": {}
   }
 ]

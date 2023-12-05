@@ -6,10 +6,10 @@ const API_URL = 'http://127.0.0.1:1338';
 const dataDirectory = './Strapi_Content_and_structure_example';
 
 const collectionTypes = [
-  { name: 'choice-to-question-maps', totalEntries: 89 },
+  { name: 'choice-to-question-maps', totalEntries: 150 },
   { name: 'first-entries', totalEntries: 5 }, // Example total entries
-  { name: 'question-to-choice-maps', totalEntries: 50 },
-  { name: 'solutions', totalEntries: 50 },
+  { name: 'question-to-choice-maps', totalEntries: 80 },
+  { name: 'solutions', totalEntries: 70 },
   { name: 'tree-levels', totalEntries: 5 },
   { name: 'bookmarks', totalEntries: 10 }
 ];

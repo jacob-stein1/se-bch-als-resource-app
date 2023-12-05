@@ -1030,9 +1030,9 @@
     "data": {
       "id": 84,
       "attributes": {
-        "ChoiceName": "External switch for mouse click",
+        "ChoiceName": "External switch(es) for mouse click",
         "createdAt": "2023-12-01T02:59:41.767Z",
-        "updatedAt": "2023-12-01T02:59:42.838Z",
+        "updatedAt": "2023-12-05T03:23:07.172Z",
         "publishedAt": "2023-12-01T02:59:42.834Z",
         "PlatformChoice": null
       }
@@ -1045,7 +1045,7 @@
       "attributes": {
         "ChoiceName": "Dwell click activation",
         "createdAt": "2023-12-01T03:00:38.931Z",
-        "updatedAt": "2023-12-01T03:00:42.720Z",
+        "updatedAt": "2023-12-05T03:19:08.800Z",
         "publishedAt": "2023-12-01T03:00:42.715Z",
         "PlatformChoice": null
       }
@@ -1099,6 +1099,682 @@
         "createdAt": "2023-12-01T03:12:42.554Z",
         "updatedAt": "2023-12-01T03:13:38.032Z",
         "publishedAt": "2023-12-01T03:12:54.043Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 90,
+      "attributes": {
+        "ChoiceName": "Still difficult to operate?",
+        "createdAt": "2023-12-01T03:13:59.961Z",
+        "updatedAt": "2023-12-01T03:14:04.831Z",
+        "publishedAt": "2023-12-01T03:14:04.830Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 91,
+      "attributes": {
+        "ChoiceName": "Eye Tracking and Head Tracking",
+        "createdAt": "2023-12-01T03:15:37.506Z",
+        "updatedAt": "2023-12-01T03:15:39.706Z",
+        "publishedAt": "2023-12-01T03:15:39.703Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 92,
+      "attributes": {
+        "ChoiceName": "Live Speech",
+        "createdAt": "2023-12-01T03:17:23.464Z",
+        "updatedAt": "2023-12-01T03:17:25.063Z",
+        "publishedAt": "2023-12-01T03:17:25.057Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 93,
+      "attributes": {
+        "ChoiceName": "Personal Voice",
+        "createdAt": "2023-12-01T03:17:36.288Z",
+        "updatedAt": "2023-12-01T03:17:37.087Z",
+        "publishedAt": "2023-12-01T03:17:37.084Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 94,
+      "attributes": {
+        "ChoiceName": "Mac",
+        "createdAt": "2023-12-05T01:35:08.945Z",
+        "updatedAt": "2023-12-05T01:43:43.829Z",
+        "publishedAt": "2023-12-05T01:35:10.733Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 95,
+      "attributes": {
+        "ChoiceName": "Windows",
+        "createdAt": "2023-12-05T01:35:18.080Z",
+        "updatedAt": "2023-12-05T01:44:00.048Z",
+        "publishedAt": "2023-12-05T01:35:24.002Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 96,
+      "attributes": {
+        "ChoiceName": "iPad",
+        "createdAt": "2023-12-05T01:35:30.380Z",
+        "updatedAt": "2023-12-05T01:35:35.561Z",
+        "publishedAt": "2023-12-05T01:35:35.547Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 97,
+      "attributes": {
+        "ChoiceName": "Mouse(trouble using)",
+        "createdAt": "2023-12-05T01:50:33.199Z",
+        "updatedAt": "2023-12-05T02:03:51.061Z",
+        "publishedAt": "2023-12-05T01:50:34.699Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 98,
+      "attributes": {
+        "ChoiceName": "Keyboard",
+        "createdAt": "2023-12-05T02:00:30.596Z",
+        "updatedAt": "2023-12-05T02:00:31.985Z",
+        "publishedAt": "2023-12-05T02:00:31.977Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 99,
+      "attributes": {
+        "ChoiceName": "Mouse and Keyboard",
+        "createdAt": "2023-12-05T02:01:01.381Z",
+        "updatedAt": "2023-12-05T02:01:02.985Z",
+        "publishedAt": "2023-12-05T02:01:02.975Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 100,
+      "attributes": {
+        "ChoiceName": "Regular Mouse",
+        "createdAt": "2023-12-05T02:13:02.000Z",
+        "updatedAt": "2023-12-05T02:13:26.250Z",
+        "publishedAt": "2023-12-05T02:13:26.244Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 101,
+      "attributes": {
+        "ChoiceName": "Trackball",
+        "createdAt": "2023-12-05T02:13:45.822Z",
+        "updatedAt": "2023-12-05T02:17:01.615Z",
+        "publishedAt": "2023-12-05T02:13:47.039Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 102,
+      "attributes": {
+        "ChoiceName": "Touchpad",
+        "createdAt": "2023-12-05T02:13:55.336Z",
+        "updatedAt": "2023-12-05T02:14:01.461Z",
+        "publishedAt": "2023-12-05T02:14:01.459Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 104,
+      "attributes": {
+        "ChoiceName": "Other Mouse",
+        "createdAt": "2023-12-05T02:14:21.166Z",
+        "updatedAt": "2023-12-05T02:14:26.763Z",
+        "publishedAt": "2023-12-05T02:14:26.757Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 105,
+      "attributes": {
+        "ChoiceName": "Need to reach forward for the keyboard",
+        "createdAt": "2023-12-05T02:15:41.425Z",
+        "updatedAt": "2023-12-05T02:15:43.093Z",
+        "publishedAt": "2023-12-05T02:15:43.090Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 106,
+      "attributes": {
+        "ChoiceName": "Type with one hand",
+        "createdAt": "2023-12-05T02:15:58.674Z",
+        "updatedAt": "2023-12-05T02:16:03.027Z",
+        "publishedAt": "2023-12-05T02:15:59.933Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 107,
+      "attributes": {
+        "ChoiceName": "Type with two hands",
+        "createdAt": "2023-12-05T02:16:11.010Z",
+        "updatedAt": "2023-12-05T02:16:16.039Z",
+        "publishedAt": "2023-12-05T02:16:16.033Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 108,
+      "attributes": {
+        "ChoiceName": "Moving the mouse",
+        "createdAt": "2023-12-05T02:28:38.506Z",
+        "updatedAt": "2023-12-05T02:28:40.841Z",
+        "publishedAt": "2023-12-05T02:28:40.836Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 109,
+      "attributes": {
+        "ChoiceName": "Moving the curosor (touchpad)",
+        "createdAt": "2023-12-05T02:32:14.148Z",
+        "updatedAt": "2023-12-05T02:35:58.478Z",
+        "publishedAt": "2023-12-05T02:35:58.474Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 110,
+      "attributes": {
+        "ChoiceName": "Moving the cursor(trackball)",
+        "createdAt": "2023-12-05T02:32:55.863Z",
+        "updatedAt": "2023-12-05T02:32:57.310Z",
+        "publishedAt": "2023-12-05T02:32:57.307Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 111,
+      "attributes": {
+        "ChoiceName": "Clicking",
+        "createdAt": "2023-12-05T02:35:00.446Z",
+        "updatedAt": "2023-12-05T02:35:08.872Z",
+        "publishedAt": "2023-12-05T02:35:08.867Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 112,
+      "attributes": {
+        "ChoiceName": "Both moving the mouse and clicking",
+        "createdAt": "2023-12-05T02:37:35.900Z",
+        "updatedAt": "2023-12-05T02:37:58.480Z",
+        "publishedAt": "2023-12-05T02:37:58.478Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 113,
+      "attributes": {
+        "ChoiceName": "An external keyboard(wired/wireless)",
+        "createdAt": "2023-12-05T02:41:09.104Z",
+        "updatedAt": "2023-12-05T02:41:11.110Z",
+        "publishedAt": "2023-12-05T02:41:11.106Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 114,
+      "attributes": {
+        "ChoiceName": "Laptop keyboard",
+        "createdAt": "2023-12-05T02:41:28.674Z",
+        "updatedAt": "2023-12-05T02:41:30.200Z",
+        "publishedAt": "2023-12-05T02:41:30.197Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 115,
+      "attributes": {
+        "ChoiceName": "Get multiple letters when you press a key",
+        "createdAt": "2023-12-05T02:42:46.823Z",
+        "updatedAt": "2023-12-05T02:42:48.039Z",
+        "publishedAt": "2023-12-05T02:42:48.035Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 116,
+      "attributes": {
+        "ChoiceName": "Get skipped letters",
+        "createdAt": "2023-12-05T02:42:54.383Z",
+        "updatedAt": "2023-12-05T02:43:00.357Z",
+        "publishedAt": "2023-12-05T02:43:00.351Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 117,
+      "attributes": {
+        "ChoiceName": "Neither of the above",
+        "createdAt": "2023-12-05T02:43:07.108Z",
+        "updatedAt": "2023-12-05T02:43:12.239Z",
+        "publishedAt": "2023-12-05T02:43:12.237Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 118,
+      "attributes": {
+        "ChoiceName": "One hand makes typo and slows down typing",
+        "createdAt": "2023-12-05T02:44:32.699Z",
+        "updatedAt": "2023-12-05T02:44:33.863Z",
+        "publishedAt": "2023-12-05T02:44:33.860Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 119,
+      "attributes": {
+        "ChoiceName": "Easily grip the mouse",
+        "createdAt": "2023-12-05T02:47:29.082Z",
+        "updatedAt": "2023-12-05T02:47:34.629Z",
+        "publishedAt": "2023-12-05T02:47:34.627Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 120,
+      "attributes": {
+        "ChoiceName": "Easily reach the mouse",
+        "createdAt": "2023-12-05T02:47:41.124Z",
+        "updatedAt": "2023-12-05T02:47:46.140Z",
+        "publishedAt": "2023-12-05T02:47:46.137Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 121,
+      "attributes": {
+        "ChoiceName": "Trackball alternate",
+        "createdAt": "2023-12-05T02:50:52.073Z",
+        "updatedAt": "2023-12-05T02:50:53.711Z",
+        "publishedAt": "2023-12-05T02:50:53.704Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 122,
+      "attributes": {
+        "ChoiceName": "Joystick alternate",
+        "createdAt": "2023-12-05T02:52:07.190Z",
+        "updatedAt": "2023-12-05T02:52:14.452Z",
+        "publishedAt": "2023-12-05T02:52:14.446Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 123,
+      "attributes": {
+        "ChoiceName": "Head mouse",
+        "createdAt": "2023-12-05T02:52:22.624Z",
+        "updatedAt": "2023-12-05T03:35:32.684Z",
+        "publishedAt": "2023-12-05T02:52:28.890Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 124,
+      "attributes": {
+        "ChoiceName": "Re-position the mouse",
+        "createdAt": "2023-12-05T03:01:11.306Z",
+        "updatedAt": "2023-12-05T03:01:12.965Z",
+        "publishedAt": "2023-12-05T03:01:12.960Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 125,
+      "attributes": {
+        "ChoiceName": "Place the mouse on your lap",
+        "createdAt": "2023-12-05T03:02:06.666Z",
+        "updatedAt": "2023-12-05T03:02:15.275Z",
+        "publishedAt": "2023-12-05T03:02:15.273Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 126,
+      "attributes": {
+        "ChoiceName": "Use of arm supports",
+        "createdAt": "2023-12-05T03:02:22.891Z",
+        "updatedAt": "2023-12-05T03:02:32.525Z",
+        "publishedAt": "2023-12-05T03:02:32.513Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 127,
+      "attributes": {
+        "ChoiceName": "Place the mouse at the arm rest level",
+        "createdAt": "2023-12-05T03:05:46.994Z",
+        "updatedAt": "2023-12-05T03:06:18.697Z",
+        "publishedAt": "2023-12-05T03:05:48.884Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 128,
+      "attributes": {
+        "ChoiceName": "Unintended Mouse Clicks",
+        "createdAt": "2023-12-05T03:14:18.501Z",
+        "updatedAt": "2023-12-05T03:14:19.819Z",
+        "publishedAt": "2023-12-05T03:14:19.815Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 130,
+      "attributes": {
+        "ChoiceName": "Other cursor control devices",
+        "createdAt": "2023-12-05T03:23:18.847Z",
+        "updatedAt": "2023-12-05T03:23:32.284Z",
+        "publishedAt": "2023-12-05T03:23:32.276Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 131,
+      "attributes": {
+        "ChoiceName": "Adjusting cursor settings",
+        "createdAt": "2023-12-05T03:26:03.530Z",
+        "updatedAt": "2023-12-05T03:26:10.940Z",
+        "publishedAt": "2023-12-05T03:26:10.935Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 132,
+      "attributes": {
+        "ChoiceName": "Trackball Solution",
+        "createdAt": "2023-12-05T03:29:13.704Z",
+        "updatedAt": "2023-12-05T03:29:15.199Z",
+        "publishedAt": "2023-12-05T03:29:15.195Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 134,
+      "attributes": {
+        "ChoiceName": "Joystick solution",
+        "createdAt": "2023-12-05T03:30:12.751Z",
+        "updatedAt": "2023-12-05T03:30:14.225Z",
+        "publishedAt": "2023-12-05T03:30:14.220Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 135,
+      "attributes": {
+        "ChoiceName": "External touchpad",
+        "createdAt": "2023-12-05T03:30:30.969Z",
+        "updatedAt": "2023-12-05T03:30:32.332Z",
+        "publishedAt": "2023-12-05T03:30:32.310Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 136,
+      "attributes": {
+        "ChoiceName": "Reach the keyboard over the touch apd",
+        "createdAt": "2023-12-05T03:52:15.726Z",
+        "updatedAt": "2023-12-05T03:52:23.305Z",
+        "publishedAt": "2023-12-05T03:52:23.303Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 137,
+      "attributes": {
+        "ChoiceName": "Use the keyboard while typing",
+        "createdAt": "2023-12-05T03:52:48.176Z",
+        "updatedAt": "2023-12-05T03:52:57.450Z",
+        "publishedAt": "2023-12-05T03:52:49.533Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 138,
+      "attributes": {
+        "ChoiceName": "Filter Keys",
+        "createdAt": "2023-12-05T03:56:03.694Z",
+        "updatedAt": "2023-12-05T03:56:10.776Z",
+        "publishedAt": "2023-12-05T03:56:10.774Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 139,
+      "attributes": {
+        "ChoiceName": "Sticky keys",
+        "createdAt": "2023-12-05T03:56:18.567Z",
+        "updatedAt": "2023-12-05T03:56:23.835Z",
+        "publishedAt": "2023-12-05T03:56:23.830Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 140,
+      "attributes": {
+        "ChoiceName": "Slow typing speed",
+        "createdAt": "2023-12-05T04:10:21.526Z",
+        "updatedAt": "2023-12-05T04:10:22.423Z",
+        "publishedAt": "2023-12-05T04:10:22.421Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 141,
+      "attributes": {
+        "ChoiceName": "Look at keys while typing",
+        "createdAt": "2023-12-05T04:10:30.763Z",
+        "updatedAt": "2023-12-05T04:10:32.465Z",
+        "publishedAt": "2023-12-05T04:10:32.458Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 142,
+      "attributes": {
+        "ChoiceName": "Typing aid",
+        "createdAt": "2023-12-05T04:13:47.492Z",
+        "updatedAt": "2023-12-05T04:13:49.403Z",
+        "publishedAt": "2023-12-05T04:13:49.401Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 143,
+      "attributes": {
+        "ChoiceName": "Angle the keyboard toward your hand",
+        "createdAt": "2023-12-05T04:13:59.615Z",
+        "updatedAt": "2023-12-05T04:14:01.078Z",
+        "publishedAt": "2023-12-05T04:14:01.072Z",
+        "PlatformChoice": null
+      }
+    },
+    "meta": {}
+  },
+  {
+    "data": {
+      "id": 144,
+      "attributes": {
+        "ChoiceName": "Type with only one hand",
+        "createdAt": "2023-12-05T04:17:50.716Z",
+        "updatedAt": "2023-12-05T04:17:51.891Z",
+        "publishedAt": "2023-12-05T04:17:51.880Z",
         "PlatformChoice": null
       }
     },
