@@ -1,8 +1,9 @@
+require('dotenv').config()
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
-const API_URL = 'http://127.0.0.1:1338';
+const API_URL = 'http://127.0.0.1:1338'; //either modify this line or update .env credentials
 const dataDirectory = './Strapi_Content_and_structure_example';
 
 const collectionTypes = [
