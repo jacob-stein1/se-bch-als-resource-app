@@ -1,5 +1,6 @@
-import { Stack, Text } from "@mantine/core";
+import { Stack, Text, Button } from "@mantine/core";
 import { useState, useEffect, useMemo, useCallback, useRef } from "react";
+import Link from "next/link";
 import Title from "../components/Title/Titles";
 import {
   IQuestion,
@@ -11,7 +12,6 @@ import searchQuestionsChoicesFromJson from "../utils/TempGetNextQuestion";
 import { bodyContentUseStyles } from "../components/MainBody/HelperFunctions/BodyContentStyle";
 import ToggleButton from "../components/MainBody/TogglebButton";
 import SolutionPages from "../utils/SolutionContent";
-import BookmarkButton from "../components/Bookmark/BookmarkButton";
 import axios from "axios";
 
 interface Props {}
@@ -236,12 +236,18 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
 
       {/* Conditional rendering for BookmarkButton */}
       {hasSolution && (
-        <BookmarkButton
-          pageTitle={solution.title}
-          pageIdentifier={solution.id} // Assuming solution.id is your unique page identifier
-          userId={userId} // Replace this with actual logic to obtain the userId
-          isSolutionPage={hasSolution}
-        />
+        <div className={classes.outer}>
+          <Link href="./bookmarks">
+            <Button
+              className={classes.inner}
+              onClick={() => {}}
+              variant="outline"
+              style={{ backgroundColor: "#FFFFFF", color: "#254885" }}
+            >
+              See your bookmarks
+            </Button>
+          </Link>
+        </div>
       )}
     </div>
   );

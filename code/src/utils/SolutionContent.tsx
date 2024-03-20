@@ -94,10 +94,6 @@ const SolutionPages: React.FC<SolutionContentProps> = ({
         {/* Title */}
         <Text className={classes.text}> {solution.title} </Text>
 
-        <Link href="./bookmarks">
-          <button onClick={() => {}}>Go to Bookmarks</button>
-        </Link>
-
         {/* Solution Description */}
         {solutionDescription && (
           <Text className={classes.descriptionText}>{solutionDescription}</Text>
