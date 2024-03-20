@@ -5,9 +5,18 @@ import { useBookmarks } from "../contexts/BookmarkContext";
 import ResourcesHandouts from "../components/MainBody/SolutionPageContent/ResourcesHandouts";
 import Title from "../components/Title/Titles";
 
-const bookmarks = () => {
+const Bookmarks = () => {
   const { bookmarks } = useBookmarks();
   const image = useRef("/titleimghome.PNG");
+  const sortedBookmarks = [...bookmarks].sort((a, b) =>
+    a.id.localeCompare(b.id)
+  );
+
+  const pageStyle = {
+    marginLeft: "2in",
+    marginRight: "2in",
+  };
+
   return (
     <div>
       <Title
@@ -16,9 +25,11 @@ const bookmarks = () => {
         titleImg={image.current}
         title={"Bookmarks"}
       />
-      <ResourcesHandouts title={""} data={bookmarks} />
+      <div style={pageStyle}>
+        <ResourcesHandouts title={""} data={sortedBookmarks} />
+      </div>
     </div>
   );
 };
 
-export default bookmarks;
+export default Bookmarks;

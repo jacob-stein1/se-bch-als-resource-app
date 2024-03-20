@@ -5,7 +5,7 @@ import { createStyles } from "@mantine/core";
 const useStyles = createStyles((theme) => ({
   button: {
     height: "57px",
-    width: "300px",
+    width: "150px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
