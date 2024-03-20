@@ -126,13 +126,47 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
     [clickedChoice, currChoices, currQuestion]
   );
 
+  const handleBookmarkNavigation = () => {
+    window.localStorage.setItem(
+      "questionnaireState",
+      JSON.stringify({
+        currQuestion,
+        currChoices,
+        clickedChoice,
+        solution,
+        hasSolution,
+        prevSelectedContent: prevSelectedContent.current,
+      })
+    );
+  };
+
   // run effect only once when component mounts
   useEffect(() => {
-    if (clickedChoice !== null) {
-      updateChoicesAndQuestions(clickedChoice).catch((error) =>
-        console.error(error)
-      );
+    const savedState = window.localStorage.getItem("questionnaireState");
+    if (savedState) {
+      const {
+        currQuestion,
+        currChoices,
+        clickedChoice,
+        solution,
+        hasSolution,
+        prevSelectedContent: savedPrevSelectedContent,
+      } = JSON.parse(savedState);
+
+      setCurrQuestion(currQuestion);
+      setCurrChoices(currChoices);
+      setClickedChoice(clickedChoice);
+      setSolution(solution);
+      setHasSolution(hasSolution);
+
+      prevSelectedContent.current = savedPrevSelectedContent;
     }
+
+    if (clickedChoice !== null) {
+      updateChoicesAndQuestions(clickedChoice).catch(console.error);
+    }
+
+    window.localStorage.removeItem("questionnaireState");
   }, []);
 
   // useEffect for fetching user ID
@@ -240,7 +274,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
           <Link href="./bookmarks">
             <Button
               className={classes.inner}
-              onClick={() => {}}
+              onClick={handleBookmarkNavigation}
               variant="outline"
               style={{ backgroundColor: "#FFFFFF", color: "#254885" }}
             >
