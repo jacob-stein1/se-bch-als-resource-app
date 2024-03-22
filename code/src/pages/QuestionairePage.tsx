@@ -92,21 +92,23 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
           console.log("Solution found, updating state...");
           setSolution(sol);
           setHasSolution(true);
+          saveProgress();
         } else {
           console.log("No solution, updating choices...");
           setSolution({ id: "", title: "" });
 
           setClickedChoice(choice);
           setHasSolution(false);
+          saveProgress();
         }
 
         // if the question title is not empty, save the current choices, question, and clicked choice
         // in the previous selected content
         if (question.title !== "" && !hasSol) {
           prevSelectedContent.current.push({
-            question: currQuestion,
-            prevChoice: clickedChoice,
-            choiceList: currChoices,
+            question: question,
+            prevChoice: choice,
+            choiceList: choicesList,
           });
           saveProgress();
           // set the new choices and question
@@ -175,32 +177,50 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
   // Load progress save on component mount
   useEffect(() => {
     console.log("Loading from save");
-    const serializedData = localStorage.getItem('prevSelectedContent');
-    console.log(serializedData);
-    if (serializedData) {
-      console.log("Successfully Loaded");
-      prevSelectedContent.current = JSON.parse(serializedData) as IBodyContent[];
+    const serializedPrevContent = localStorage.getItem('prevSelectedContent');
+    const serializedHasSolution = localStorage.getItem('hasSolution');
+    const serializedSolution = localStorage.getItem('solution');
+    if (serializedPrevContent) {
+      prevSelectedContent.current = JSON.parse(serializedPrevContent) as IBodyContent[];      
     }
-    console.log(prevSelectedContent.current);
+    if (serializedHasSolution) {
+      setHasSolution(JSON.parse(serializedHasSolution) as boolean);
+    }
+    if (serializedSolution) {
+      setSolution(JSON.parse(serializedSolution) as ISolution);
+    }
+
+
     if (prevSelectedContent.current.length > 0) {
+      const lastPage = prevSelectedContent.current[prevSelectedContent.current.length - 1];
       setCurrQuestion(
-        prevSelectedContent.current[prevSelectedContent.current.length - 1]
+        lastPage
           .question
       );
       setClickedChoice(
-        prevSelectedContent.current[prevSelectedContent.current.length - 1]
+        lastPage
           .prevChoice
       );
       setCurrChoices(
-        prevSelectedContent.current[prevSelectedContent.current.length - 1]
+        lastPage
           .choiceList
       );
       }
+      
+    else { 
+      prevSelectedContent.current.push({
+        question: currQuestion,
+        prevChoice: clickedChoice,
+        choiceList: currChoices,
+      });
+    }
   }, []); 
 
   // Update local storage
   const saveProgress = () => {
     localStorage.setItem('prevSelectedContent', JSON.stringify(prevSelectedContent.current));
+    localStorage.setItem('hasSolution', JSON.stringify(hasSolution))
+    localStorage.setItem('solution', JSON.stringify(solution))
   };
 
   // useEffect for fetching user ID
@@ -221,38 +241,39 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
 
   /**
    * Goes to the previous selected question and choices, and updates the current state with previous state
-   */ //the way we fetch fprevious question was fixed during dev by using reroute
+   */ //the way we fetch previous question was fixed during dev by using reroute
   const prevQuestion = useCallback(() => {
-    if (prevSelectedContent.current.length > 0) {
-      //updated from 1 to 0 so that it shows up right after first question
-      const i = 1;
+    if (prevSelectedContent.current.length > 1) {
 
       // if current question has solution
       if (hasSolution) {
         setHasSolution(false);
+        saveProgress();
         return;
       }
-
-      // update current state with previous state
-      setCurrQuestion(
-        prevSelectedContent.current[prevSelectedContent.current.length - i]
-          .question
-      );
-      setClickedChoice(
-        prevSelectedContent.current[prevSelectedContent.current.length - i]
-          .prevChoice
-      );
-      setCurrChoices(
-        prevSelectedContent.current[prevSelectedContent.current.length - i]
-          .choiceList
-      );
 
       // remove previous state from the list
       prevSelectedContent.current.pop();
       saveProgress();
 
+      // update current state with previous state
+      setCurrQuestion(
+        (prevSelectedContent.current[prevSelectedContent.current.length - 1] as IBodyContent)
+          .question
+      );
+      setClickedChoice(
+        (prevSelectedContent.current[prevSelectedContent.current.length - 1]  as IBodyContent)
+          .prevChoice
+      );
+      setCurrChoices(
+        (prevSelectedContent.current[prevSelectedContent.current.length - 1]  as IBodyContent)
+          .choiceList
+      );
+
+      
+
       // set page title and image to default if previous state is not available
-      if (prevSelectedContent.current.length < 2) {
+      if (prevSelectedContent.current.length == 1) {
         pageTitle.current = "Home";
         image.current = "/titleimghome.PNG";
       }
@@ -267,7 +288,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
   return (
     <div>
       <Title
-        hasPrev={prevSelectedContent.current.length > 0} //update from 1 to 0 so that backbutton shows up right after 1st page
+        hasPrev={prevSelectedContent.current.length > 1} 
         prevQuestion={prevQuestion}
         titleImg={image.current}
         title={pageTitle.current}
