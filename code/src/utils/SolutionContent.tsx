@@ -52,6 +52,7 @@ const SolutionPages: React.FC<SolutionContentProps> = ({
         handoutsTestimonialsList,
         pageContent,
       ] = await getSolutionContent(solution.id);
+      resourceList[0].id = solution.id;
       setResourceList(resourceList);
       setHandoutTestimonialList(handoutsTestimonialsList);
       setPageContent(pageContent);

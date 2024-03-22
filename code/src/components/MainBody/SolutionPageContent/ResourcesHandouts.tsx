@@ -100,9 +100,9 @@ const Resources = ({
             <div style={{ marginBottom: "8px" }}>
               {" "}
               <BookmarkButton
-                id={resource.title}
+                id={resource.id}
                 title={resource.title}
-                url={"/"}
+                url={resource.url}
               />
             </div>
           </div>

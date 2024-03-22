@@ -13,7 +13,7 @@ const Bookmarks = () => {
   const { bookmarks } = useBookmarks();
   const image = useRef("/titleimghome.PNG");
   const sortedBookmarks = [...bookmarks].sort((a, b) =>
-    a.id.localeCompare(b.id)
+    a.title.localeCompare(b.title)
   );
 
   return (
