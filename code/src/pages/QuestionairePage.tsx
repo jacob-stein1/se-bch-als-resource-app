@@ -49,7 +49,9 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
 
   // whether solution has been found
   const [hasSolution, setHasSolution] = useState(false);
-
+  
+  // so that we don't rewrite the save on first render with the initial data
+  const isFirstRender = useRef(true);
   // page title ref
   const pageTitle = useRef("Home");
 
@@ -92,14 +94,12 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
           console.log("Solution found, updating state...");
           setSolution(sol);
           setHasSolution(true);
-          saveProgress();
         } else {
           console.log("No solution, updating choices...");
           setSolution({ id: "", title: "" });
 
           setClickedChoice(choice);
           setHasSolution(false);
-          saveProgress();
         }
 
         // if the question title is not empty, save the current choices, question, and clicked choice
@@ -146,7 +146,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
   };
 
   // run effect only once when component mounts
-  useEffect(() => {
+  /* useEffect(() => {
     const savedState = window.localStorage.getItem("questionnaireState");
     if (savedState) {
       const {
@@ -172,13 +172,15 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
     }
 
     window.localStorage.removeItem("questionnaireState");
-  }, []);
+  }, []); */
 
   // Load progress save on component mount
   useEffect(() => {
     console.log("Loading from save");
     const serializedPrevContent = localStorage.getItem('prevSelectedContent');
     const serializedHasSolution = localStorage.getItem('hasSolution');
+    console.log("Serialized" + serializedHasSolution);
+    console.log("Currently: " + hasSolution);
     const serializedSolution = localStorage.getItem('solution');
     if (serializedPrevContent) {
       prevSelectedContent.current = JSON.parse(serializedPrevContent) as IBodyContent[];      
@@ -189,7 +191,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
     if (serializedSolution) {
       setSolution(JSON.parse(serializedSolution) as ISolution);
     }
-
+    console.log("After: " + hasSolution);
 
     if (prevSelectedContent.current.length > 0) {
       const lastPage = prevSelectedContent.current[prevSelectedContent.current.length - 1];
@@ -217,11 +219,23 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
   }, []); 
 
   // Update local storage
-  const saveProgress = () => {
+  const saveProgress = useCallback(() => {
     localStorage.setItem('prevSelectedContent', JSON.stringify(prevSelectedContent.current));
-    localStorage.setItem('hasSolution', JSON.stringify(hasSolution))
-    localStorage.setItem('solution', JSON.stringify(solution))
-  };
+    localStorage.setItem('hasSolution', JSON.stringify(hasSolution));
+    localStorage.setItem('solution', JSON.stringify(solution));
+  }, [hasSolution, solution]);
+
+  //Save progress whenever these state variables change.
+  useEffect(() => {
+
+
+    if (isFirstRender.current) {
+      isFirstRender.current = false; 
+      return; 
+    }
+    
+    saveProgress();
+  }, [saveProgress, hasSolution, solution]);
 
   // useEffect for fetching user ID
   useEffect(() => {
@@ -248,10 +262,9 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
       // if current question has solution
       if (hasSolution) {
         setHasSolution(false);
-        saveProgress();
         return;
       }
-
+      
       // remove previous state from the list
       prevSelectedContent.current.pop();
       saveProgress();
