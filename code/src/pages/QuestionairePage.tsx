@@ -68,6 +68,8 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
     };
   }, []);
 
+
+
   // updates choices and questions for clicked choice
   const updateChoicesAndQuestions = useCallback(
     async (choice: IChoice) => {
@@ -106,6 +108,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
             prevChoice: clickedChoice,
             choiceList: currChoices,
           });
+          saveProgress();
           // set the new choices and question
           console.log("Current question set to:", question);
           console.log("Current choices set to:", choicesList);
@@ -169,6 +172,37 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
     window.localStorage.removeItem("questionnaireState");
   }, []);
 
+  // Load progress save on component mount
+  useEffect(() => {
+    console.log("Loading from save");
+    const serializedData = localStorage.getItem('prevSelectedContent');
+    console.log(serializedData);
+    if (serializedData) {
+      console.log("Successfully Loaded");
+      prevSelectedContent.current = JSON.parse(serializedData) as IBodyContent[];
+    }
+    console.log(prevSelectedContent.current);
+    if (prevSelectedContent.current.length > 0) {
+      setCurrQuestion(
+        prevSelectedContent.current[prevSelectedContent.current.length - 1]
+          .question
+      );
+      setClickedChoice(
+        prevSelectedContent.current[prevSelectedContent.current.length - 1]
+          .prevChoice
+      );
+      setCurrChoices(
+        prevSelectedContent.current[prevSelectedContent.current.length - 1]
+          .choiceList
+      );
+      }
+  }, []); 
+
+  // Update local storage
+  const saveProgress = () => {
+    localStorage.setItem('prevSelectedContent', JSON.stringify(prevSelectedContent.current));
+  };
+
   // useEffect for fetching user ID
   useEffect(() => {
     const fetchUserId = async () => {
@@ -215,6 +249,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
 
       // remove previous state from the list
       prevSelectedContent.current.pop();
+      saveProgress();
 
       // set page title and image to default if previous state is not available
       if (prevSelectedContent.current.length < 2) {
