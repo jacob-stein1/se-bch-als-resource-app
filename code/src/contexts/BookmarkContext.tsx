@@ -49,7 +49,15 @@ export const BookmarkProvider: React.FC<BookmarkProviderProps> = ({
   }, [bookmarks]);
 
   const addBookmark = (newBookmark: ResourceLink) => {
-    setBookmarks((prevBookmarks) => [...prevBookmarks, newBookmark]);
+    setBookmarks((prevBookmarks) => {
+      const bookmarkExists = prevBookmarks.some(
+        (bookmark) => bookmark.id === newBookmark.id
+      );
+      if (!bookmarkExists) {
+        return [...prevBookmarks, newBookmark];
+      }
+      return prevBookmarks;
+    });
   };
 
   const removeBookmark = (id: string) => {
