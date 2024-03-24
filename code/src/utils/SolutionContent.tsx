@@ -1,5 +1,4 @@
 import React, { Suspense, useEffect, useState } from "react";
-import Link from "next/link";
 import { bodyContentUseStyles } from "../components/MainBody/HelperFunctions/BodyContentStyle";
 import { Stack, Text } from "@mantine/core";
 import ResourcesHandouts from "../components/MainBody/SolutionPageContent/ResourcesHandouts";
@@ -52,6 +51,7 @@ const SolutionPages: React.FC<SolutionContentProps> = ({
         handoutsTestimonialsList,
         pageContent,
       ] = await getSolutionContent(solution.id);
+      resourceList[0].id = solution.id;
       setResourceList(resourceList);
       setHandoutTestimonialList(handoutsTestimonialsList);
       setPageContent(pageContent);

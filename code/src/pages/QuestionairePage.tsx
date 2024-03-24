@@ -44,9 +44,6 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
   // solution state
   const [solution, setSolution] = useState<ISolution>({ id: "", title: "" });
 
-  //set User ID
-  const [userId, setUserId] = useState(null);
-
   // whether solution has been found
   const [hasSolution, setHasSolution] = useState(false);
 
@@ -120,6 +117,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
         }
       } catch (error) {
         console.error(error);
+
         // handle error here, for example by setting an error message state
       }
     },
@@ -130,9 +128,6 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
     window.localStorage.setItem(
       "questionnaireState",
       JSON.stringify({
-        currQuestion,
-        currChoices,
-        clickedChoice,
         solution,
         hasSolution,
         prevSelectedContent: prevSelectedContent.current,
@@ -145,17 +140,11 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
     const savedState = window.localStorage.getItem("questionnaireState");
     if (savedState) {
       const {
-        currQuestion,
-        currChoices,
-        clickedChoice,
         solution,
         hasSolution,
         prevSelectedContent: savedPrevSelectedContent,
       } = JSON.parse(savedState);
 
-      setCurrQuestion(currQuestion);
-      setCurrChoices(currChoices);
-      setClickedChoice(clickedChoice);
       setSolution(solution);
       setHasSolution(hasSolution);
 
@@ -167,22 +156,6 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
     }
 
     window.localStorage.removeItem("questionnaireState");
-  }, []);
-
-  // useEffect for fetching user ID
-  useEffect(() => {
-    const fetchUserId = async () => {
-      try {
-        const response = await axios.get("http://localhost:1338/api/users");
-        // Assuming you want to use the first user in the list
-        const firstUser = response.data[0];
-        setUserId(firstUser.id);
-      } catch (error) {
-        console.error("Error fetching user ID:", error);
-      }
-    };
-
-    fetchUserId();
   }, []);
 
   /**
