@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 
 import { useBookmarks } from "../contexts/BookmarkContext";
@@ -15,6 +16,17 @@ const Bookmarks = () => {
   const image = useRef("/titleimghome.PNG");
   const [bookmarkURL, setBookmarkURL] = useState("");
   const router = useRouter();
+
+  interface TruncatedUrlProps {
+    text: string;
+  }
+
+  const TruncatedUrl: React.FC<TruncatedUrlProps> = ({ text }) => {
+    const maxLength = 100;
+    const truncated =
+      text.length > maxLength ? `${text.substring(0, maxLength)}...` : text;
+    return <Text>{truncated}</Text>;
+  };
 
   useEffect(() => {
     const fetchAndAddBookmark = async (id: string) => {
@@ -71,8 +83,23 @@ const Bookmarks = () => {
             <ResourcesHandouts title={""} data={sortedBookmarks} />
           </div>
           <div className={classes.outer}>
-            <div className={classes.bookmarkContainer}>
-              <Text>Bookmark URL: {bookmarkURL}</Text>
+            <Text style={{ color: "#254885", marginBottom: "20px" }}>
+              Copy the link below to automatically load and access your
+              bookmarks
+            </Text>
+            <div
+              className={classes.bookmarkContainer}
+              onClick={() => navigator.clipboard.writeText(bookmarkURL)}
+            >
+              <Image
+                src={"./copy-icon.svg"}
+                alt={"Copy Icon"}
+                className={classes.copyIcon}
+                width={30}
+                height={30}
+                layout="fixed"
+              />
+              <TruncatedUrl text={bookmarkURL} />
             </div>
           </div>
         </div>

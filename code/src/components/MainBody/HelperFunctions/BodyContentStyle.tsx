@@ -82,14 +82,21 @@ export const bodyContentUseStyles = createStyles((theme) => ({
   },
 
   bookmarkContainer: {
-    height: "100px",
+    height: "80px",
     display: "flex",
     width: "100%",
     color: "#254885",
     border: "2px solid #254885",
     borderRadius: rem(10),
-    justifyContent: "center",
+    justifyContent: "flex-start",
     alignItems: "center",
     alignContent: "center",
+    paddingLeft: "20px",
+    cursor: "pointer",
+  },
+  copyIcon: {
+    marginRight: "20px",
+    width: "30px",
+    height: "30px",
   },
 }));
