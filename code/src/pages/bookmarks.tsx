@@ -67,44 +67,29 @@ const Bookmarks = () => {
 
   return (
     <div>
-   
-        <Title
-          hasPrev={true}
-          prevQuestion={() => {}}
-          titleImg={image.current}
-          title={"Bookmarks"}
-        />
-
+      <Title
+        hasPrev={true}
+        prevQuestion={() => {}}
+        titleImg={image.current}
+        title={"Bookmarks"}
+      />
 
       {sortedBookmarks.length > 0 ? (
         <div>
-           <div className={classes.outer}>
-            <Text style={{ color: "#254885", marginBottom: "20px" }}>
-              Copy the link below to automatically load and access your
-              bookmarks
+          <div className={classes.outer}>
+            <Text style={{ color: "#254885", marginBottom: "0px", fontWeight: "bold", fontSize: "1.7em" }}>
+              Save Your Resources
+            </Text>
+            <Text style={{ color: "#68759C", fontWeight: "normal", marginBottom: "10px", fontSize: "0.8em" }}>
+              Use the link below to automatically load and access your bookmarks in the future from any device.
             </Text>
             <div>
-            <CopyableLink url={bookmarkURL} />
-    </div>
-            {/* <div
-              className={classes.bookmarkContainer}
-              onClick={() => navigator.clipboard.writeText(bookmarkURL)}
-            >
-              <Image
-                src={"./copy-icon.svg"}
-                alt={"Copy Icon"}
-                className={classes.copyIcon}
-                width={30}
-                height={30}
-                layout="fixed"
-              />
-              <TruncatedUrl text={bookmarkURL} />
-            </div> */}
+              <CopyableLink url={bookmarkURL} />
+            </div>
           </div>
           <div className={classes.outer} style={{ marginBottom: "2rem" }}>
             <ResourcesHandouts title={""} data={sortedBookmarks} />
           </div>
-         
         </div>
       ) : (
         <div className={classes.outer}>
