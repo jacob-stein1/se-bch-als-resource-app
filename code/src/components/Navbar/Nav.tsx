@@ -1,6 +1,7 @@
 import React from 'react'
 import { createStyles, Header, Container, Group, Burger, rem} from '@mantine/core';
 import Image from 'next/image'
+import Link from 'next/link';
 
 /**
  *  Nav component for the navigation bar
@@ -27,6 +28,7 @@ const Nav = () => {
       <Header height={HEADER_HEIGHT} sx={{ borderBottom: 0 }}>
       <Container className={classes.inner} fluid>
         <Group>
+          <Link href="/">
         <Image
           src="/Boston_Children's_Hospital_logo.png"
           alt="BCH Logo"
@@ -34,6 +36,7 @@ const Nav = () => {
           height={50}
           style={{paddingLeft: "10px"}}
         />
+        </Link>
         </Group>
         <Burger size="lg" color="#254885" opened={false} />
       </Container>
