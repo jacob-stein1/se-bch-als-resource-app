@@ -6,7 +6,7 @@ import { useBookmarks } from "../contexts/BookmarkContext";
 import ResourcesHandouts from "../components/MainBody/SolutionPageContent/ResourcesHandouts";
 import Title from "../components/Title/Titles";
 import { bodyContentUseStyles } from "../components/MainBody/HelperFunctions/BodyContentStyle";
-import { Text, Button } from "@mantine/core";
+import { Text } from "@mantine/core";
 import getSolutionContent from "@/utils/GetSolutionPageForChoice";
 
 const Bookmarks = () => {
@@ -77,11 +77,12 @@ const Bookmarks = () => {
       {sortedBookmarks.length > 0 ? (
         <div>
           <div className={classes.outer}>
+            
             <Text style={{ color: "#254885", marginBottom: "0px", fontWeight: "bold", fontSize: "1.7em" }}>
               Save Your Resources
             </Text>
             <Text style={{ color: "#68759C", fontWeight: "normal", marginBottom: "10px", fontSize: "0.8em" }}>
-              Use the link below to automatically load and access your bookmarks in the future from any device.
+              Use the link below to automatically load and access your bookmarks in the future, from any device.
             </Text>
             <div>
               <CopyableLink url={bookmarkURL} />
