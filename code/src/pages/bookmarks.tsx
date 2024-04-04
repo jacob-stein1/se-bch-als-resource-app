@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import { useRouter } from "next/router";
-import CopyableLink from '../components/CopyURL/CopyUrl';
+import CopyableLink from "../components/CopyURL/CopyUrl";
 import { useBookmarks } from "../contexts/BookmarkContext";
 import ResourcesHandouts from "../components/MainBody/SolutionPageContent/ResourcesHandouts";
 import Title from "../components/Title/Titles";
@@ -59,7 +59,7 @@ const Bookmarks = () => {
     const bookmarkIds = sortedBookmarks
       .map((bookmark) => bookmark.id)
       .join(",");
-    const newUrl = `http://localhost:3000/bookmarks?ids=${encodeURIComponent(
+    const newUrl = `https://se-bch-als-resource-app-seven.vercel.app/bookmarks?ids=${encodeURIComponent(
       bookmarkIds
     )}`;
     setBookmarkURL(newUrl);
@@ -77,12 +77,26 @@ const Bookmarks = () => {
       {sortedBookmarks.length > 0 ? (
         <div>
           <div className={classes.outer}>
-            
-            <Text style={{ color: "#254885", marginBottom: "0px", fontWeight: "bold", fontSize: "1.7em" }}>
+            <Text
+              style={{
+                color: "#254885",
+                marginBottom: "0px",
+                fontWeight: "bold",
+                fontSize: "1.7em",
+              }}
+            >
               Save Your Resources
             </Text>
-            <Text style={{ color: "#68759C", fontWeight: "normal", marginBottom: "10px", fontSize: "0.8em" }}>
-              Use the link below to automatically load and access your bookmarks in the future, from any device.
+            <Text
+              style={{
+                color: "#68759C",
+                fontWeight: "normal",
+                marginBottom: "10px",
+                fontSize: "0.8em",
+              }}
+            >
+              Use the link below to automatically load and access your bookmarks
+              in the future, from any device.
             </Text>
             <div>
               <CopyableLink url={bookmarkURL} />
